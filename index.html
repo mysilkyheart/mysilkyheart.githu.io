@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Me</title>
+    <link rel="stylesheet" href="./assets/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/dist/css/all.css">
+    <link rel="stylesheet" href="./assets/dist/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://cdn3.iconfinder.com/data/icons/job-resume-6/66/46-512.png">
+
+</head>
+
+<body>
+    <!-- <nav class="navbar navbar-light mb-4">
+        <a href="" class="navbar-brand">About Me</a>
+    </nav> -->
+    <header class="page">
+        <div class="container">
+            <div class="text-box">
+                <div class="header-title">
+                    <span class="header"> HELLO, </span> <br>
+                    <span class="sub-header"> THANKS FOR VISIT MY PROFILE </span>
+                </div>
+                <a href="#page2"><button id='btn-page' class="btn btn-success btn-lg">Learn More About Me</button></a>
+            </div>
+        </div>
+    </header>
+    <main class="page" id="page2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://avatars3.githubusercontent.com/u/39664742?s=460&v=4" class="card-img-top"
+                            alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="far fa-id-card"></i> Devi Adi Nufriana
+                            </h5>
+                            <i class="fas fa-info-circle"></i> Don't Need to Talk, Just Show Your Code.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <h4 class="card-title text-right text-light">KEMAMPUAN YANG DIKUASAI</h4>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">Javascript <i class="fas fa-arrow-down float-right"></i><i
+                                    class="fas fa-arrow-up float-right"></i></div>
+                            <p class="card-text">
+                                Merupakan bahasa pemrograman utama yang dikuasai, dengan pengalaman mengembangkan
+                                website
+                                <a href="http://brilife.co.id/digiform"> SPAJ Digital </a> menggunakan <a
+                                    href="https://reactjs.org/">ReactJS</a> untuk frontend dengan
+                                template<a href="https://material-ui.com/">material-ui</a>. dan untuk mengembangkan
+                                backend
+                                menggunakan teknologi <a href="https://nodejs.org/en/"> nodejs </a>
+                            </p>
+                            <label>Skill</label>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">PHP <i class="fas fa-arrow-down float-right"></i><i
+                                    class="fas fa-arrow-up float-right"></i></div>
+                            <p class="card-text">
+                                merupakan bahasa pemrograman pertama yang dikuasai menggunakan framework
+                                <a href="https://codeigniter.com/"> codeigniter </a> untuk mengembangkan <a
+                                    href="https://github.com/mysilkyheart/sistem_skripsi"> sistem skripsi </a> di
+                                universitas muhadi setiadi untuk kebutuhan skripsi.
+                            </p>
+                            <label>Skill</label>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">Database <i class="fas fa-arrow-down float-right"></i><i
+                                    class="fas fa-arrow-up float-right"></i></div>
+                            <p class="card-text">
+                                mssql dan mysql merupakan database yang digunakan dalam pengembangan aplikasi yang
+                                sering
+                                saya buat, meskipun tidak terlalu mahir dalam relasi database.
+                            </p>
+                            <label>Skill</label>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $("a").on('click', function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+
+                var hash = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+                    window.location.hash = hash;
+                });
+            } 
+        });
+    });
+</script>
+<script src="./assets/dist/js/bootstrap.min.js"></script>
+<script src="./assets/dist/js/all.js"></script>
+
+</html>
