@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- // https://colorhunt.co/palette/157179 -->
 
 <head>
     <meta charset="UTF-8">
@@ -9,32 +10,47 @@
     <link rel="stylesheet" href="./assets/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/dist/css/all.css">
     <link rel="stylesheet" href="./assets/dist/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://cdn3.iconfinder.com/data/icons/job-resume-6/66/46-512.png">
+    <link rel="icon" href="http://icons.iconarchive.com/icons/inipagi/job-seeker/1024/id-card-icon.png">
 
 </head>
 
-<body>
-    <!-- <nav class="navbar navbar-light mb-4">
-        <a href="" class="navbar-brand">About Me</a>
-    </nav> -->
-    <header class="page">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-expand-lg fixed-top mb-4 navbar-dark">
+        <a href="" class="navbar-brand">
+            <img src="http://icons.iconarchive.com/icons/inipagi/job-seeker/1024/id-card-icon.png" width="30" alt="">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarText">
+        </div>
+        <div class="navbar-right">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#page1"> <i class="fas fa-home"></i> Welcome</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#page2"> <i class="fas fa-address-card"></i> Profile </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class="page" id="page1">
         <div class="container">
             <div class="text-box">
                 <div class="header-title">
                     <span class="header"> HELLO, </span> <br>
                     <span class="sub-header"> THANKS FOR VISIT MY PROFILE </span>
                 </div>
-                <a href="#page2"><button id='btn-page' class="btn btn-success btn-lg">Learn More About Me</button></a>
+                <a class="nav-link" href="#page2"><button id='btn-page' class="btn btn-success btn-lg">Learn More About
+                        Me</button></a>
             </div>
         </div>
     </header>
-    <main class="page" id="page2">
-        <div class="container">
+    <main class="page">
+        <div class="container" id="page2">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in" data-aos-duration="2000">
                         <img src="https://avatars3.githubusercontent.com/u/39664742?s=460&v=4" class="card-img-top"
                             alt="">
                         <div class="card-body">
@@ -46,33 +62,31 @@
                     </div>
                 </div>
                 <div class="col-md-7">
-                    <h4 class="card-title text-right text-light">KEMAMPUAN YANG DIKUASAI</h4>
-                    <div class="card">
+                    <h4 data-aos="fade-down" data-aos-duration="2000" class="card-title text-right text-light">KEMAMPUAN</h4>
+                    <div class="card collapsed" data-aos="fade-right" data-toggle="collapse" data-target="#panel1">
                         <div class="card-body">
-                            <div class="card-title">Javascript <i class="fas fa-arrow-down float-right"></i><i
-                                    class="fas fa-arrow-up float-right"></i></div>
-                            <p class="card-text">
+                            <div class="card-title">Javascript <i class="fas fa-arrow-up float-right"></i></div>
+                            <p class="card-text collapse" id="panel1">
                                 Merupakan bahasa pemrograman utama yang dikuasai, dengan pengalaman mengembangkan
                                 website
                                 <a href="http://brilife.co.id/digiform"> SPAJ Digital </a> menggunakan <a
                                     href="https://reactjs.org/">ReactJS</a> untuk frontend dengan
-                                template<a href="https://material-ui.com/">material-ui</a>. dan untuk mengembangkan
+                                template <a href="https://material-ui.com/"> material-ui</a>. dan untuk mengembangkan
                                 backend
                                 menggunakan teknologi <a href="https://nodejs.org/en/"> nodejs </a>
                             </p>
                             <label>Skill</label>
                             <div class="progress">
                                 <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card collapsed" data-aos="fade-left" data-toggle="collapse" data-target="#panel2">
                         <div class="card-body">
-                            <div class="card-title">PHP <i class="fas fa-arrow-down float-right"></i><i
-                                    class="fas fa-arrow-up float-right"></i></div>
-                            <p class="card-text">
+                            <div class="card-title">PHP <i class="fas fa-arrow-up float-right"></i></div>
+                            <p class="card-text collapse" id="panel2">
                                 merupakan bahasa pemrograman pertama yang dikuasai menggunakan framework
                                 <a href="https://codeigniter.com/"> codeigniter </a> untuk mengembangkan <a
                                     href="https://github.com/mysilkyheart/sistem_skripsi"> sistem skripsi </a> di
@@ -81,16 +95,15 @@
                             <label>Skill</label>
                             <div class="progress">
                                 <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card collapsed" data-aos="fade-right" data-toggle="collapse" data-target="#panel3">
                         <div class="card-body">
-                            <div class="card-title">Database <i class="fas fa-arrow-down float-right"></i><i
-                                    class="fas fa-arrow-up float-right"></i></div>
-                            <p class="card-text">
+                            <div class="card-title">Database <i class="fas fa-arrow-up float-right"></i></div>
+                            <p class="card-text collapse" id="panel3">
                                 mssql dan mysql merupakan database yang digunakan dalam pengembangan aplikasi yang
                                 sering
                                 saya buat, meskipun tidak terlalu mahir dalam relasi database.
@@ -98,7 +111,7 @@
                             <label>Skill</label>
                             <div class="progress">
                                 <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                                    aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+                                    aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:50%"></div>
                             </div>
                         </div>
                     </div>
@@ -110,9 +123,10 @@
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <script>
     $(document).ready(function () {
-
         $("a").on('click', function (event) {
             if (this.hash !== "") {
                 event.preventDefault();
@@ -124,9 +138,12 @@
                 }, 800, function () {
                     window.location.hash = hash;
                 });
-            } 
+            }
         });
+
+        AOS.init();
     });
+
 </script>
 <script src="./assets/dist/js/bootstrap.min.js"></script>
 <script src="./assets/dist/js/all.js"></script>

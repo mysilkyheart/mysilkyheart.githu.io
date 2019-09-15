@@ -10,20 +10,28 @@ body {
 }
 
 .page {
-    height: 100vh;
-    display: grid;
-    place-items: center center;
-    margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center center;
+  margin: 0;
+}
+
+.card-title {
+  color: #394a6d
 }
 
 .card {
   border-radius: 5px;
-  border: 1px solid black;
-  background: rgba(226, 232, 228, 0.8);
+  background: rgba(227, 230, 228, 0.8);
   cursor: pointer;
   transition: all 2s linear;
   margin-bottom: 20px;
   flex: 0 0 auto;
+}
+
+.card:hover {
+  border: 5px solid black;
+  transition: transform 0.7s;
 }
 
 .navbar {
@@ -31,33 +39,45 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.card-text {
-  display: none;
+.progress-bar {
+  -webkit-transition: none !important;
+  transition: none !important;
 }
 
 .card-title {
   font-weight: bold;
 }
 
-h4 {
-  font-weight: bold;
-  animation-name: moveToRight;
-  animation-duration: 3s;
+
+.nav-link {
+  border: 1px solid 394a6d;
+  margin: 5px;
+  border-radius: 5px;
 }
 
-.card:hover .card-text {
+.navbar {
+  background-color: #394a6d57;
+  /* color: white; */
+}
+
+.active {
+  background-color: #394a6d;
+  /* color: white */
+}
+
+.card.collapsed .fa-arrow-up {
+  transform: rotate(0deg);
+  transition: .3s transform ease-in-out;  
+}
+
+.card .fa-arrow-up {
+  transform: rotate(180deg);
+  transition: .3s transform ease-in-out;
+}
+
+/* .card.collapsed .fa-arrow-down {
   display: block;
-  animation-name: moveInBottom;
-  animation-duration: 1s;
-}
-
-.card:hover .fa-arrow-up {
-  display: none;
-}
-
-.card:hover .fa-arrow-down {
-  display: block;
-}
+} */
 
 .card .fa-arrow-down {
   display: none;
@@ -73,17 +93,17 @@ h4 {
 }
 
 .header-title {
-    animation-name: moveToRight;
-    animation-duration: 2s;
+  animation-name: moveToRight;
+  animation-duration: 2s;
 }
 
 .sub-header {
-    animation-name: moveToRight;
-    animation-duration: 7s;
+  animation-name: moveToRight;
+  animation-duration: 7s;
 }
 
 #btn-page {
-    animation: ease-out 3s
+  animation: ease-out 3s;
 }
 
 @keyframes moveToRight {
