@@ -6,84 +6,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Me</title>
+    <title>Devi Adi Nufriana</title>
     <link rel="stylesheet" href="./assets/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/dist/css/all.css">
     <link rel="stylesheet" href="./assets/dist/css/style.css">
+    <link rel="stylesheet" href="./assets/dist/css/box-shadow.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/dist/image/avatar.png">
 
-    <link rel="icon" href="http://icons.iconarchive.com/icons/inipagi/job-seeker/1024/id-card-icon.png">
+    <style>
+        /* * {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    } */
+    </style>
 
 </head>
+<div class="background">
+
+</div>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <nav class="navbar navbar-expand-lg fixed-top mb-4 navbar-dark">
-        <a href="" class="navbar-brand">
-            <img src="http://icons.iconarchive.com/icons/inipagi/job-seeker/1024/id-card-icon.png" width="30" alt="">
-        </a>
-        <div class="collapse navbar-collapse" id="navbarText">
+    <nav class="navbar navbar-expand-lg fixed-top mb-4" style="background-color: #f1f1f1;">
+        <!-- <a href="" class="navbar-brand">
+            <img src="./assets/dist/image/avatar.png" width="40" alt="">
+        </a> -->
+        <div class="collapse navbar-collapse m-3" id="navbarText" style="font-size: xx-large; color: #182153;">
+            Devi Adi Nufriana
         </div>
+
         <div class="navbar-right">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#page1"> <i class="fas fa-home"></i> Welcome</a>
+                    <a class="nav-link" style="color: #182153; font-size: large;" href="#page1"> WELCOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#page2"> <i class="fas fa-address-card"></i> Profile </a>
+                    <a class="nav-link" style="color: #182153; font-size: large;" href="#page2"> PROFILE </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #182153; font-size: large;" href="#page3"> EDUCATION </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #182153; font-size: large;" href="#page4"> CONTACT ME </a>
                 </li>
             </ul>
         </div>
     </nav>
-    <header class="page" id="page1">
-        <div class="container">
-            <div class="text-box">
-                <div class="header-title">
-                    <span class="header"> HELLO, </span> <br>
-                    <span class="sub-header"> THANKS FOR VISIT MY PROFILE </span>
+    <img src="https://avatars3.githubusercontent.com/u/39664742?s=460&v=4"
+        style="position: absolute; height: 57rem; clip-path: polygon(0 0, 100% 0, 0 100%, 0% 100%); opacity: 0.7;">
+    <header class="page" id="page1" style="background-color: #182153;">
+        <div class="container-fluid" style="padding-left: 35rem;">
+            <div class="text-box" style="background-color: #f1f1f1;">
+                <div class="card-body">
+                    <div class="header-title">
+                        <span class="header" style="color: #182153"> HELLO, </span> <br>
+                        <span class="sub-header" style="color: #182153"> THANKS FOR VISIT MY PROFILE </span>
+                    </div>
+                    <a href="#page2">
+                        <!-- class='bShadow' -->
+                        <button id="btn-page" class="bShadow btn btn-success btn-lg">Learn More About
+                            Me</button>
+                    </a>
                 </div>
-                <a class="nav-link" href="#page2"><button id='btn-page' class="btn btn-success btn-lg">Learn More About
-                        Me</button></a>
             </div>
         </div>
     </header>
-    <main class="page">
-        <div class="container" id="page2">
+    <main class="page" id="page2">
+        <div class="container card-body">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card" data-aos="zoom-in" data-aos-duration="2000">
-                        <img src="https://avatars3.githubusercontent.com/u/39664742?s=460&v=4" class="card-img-top"
-                            alt="">
+                    <div class="card">
+                        <img src="https://avatars3.githubusercontent.com/u/39664742?s=460&v=4">
                         <div class="card-body">
-                            <h5 class="card-title">
-                                <i class="far fa-id-card"></i> Devi Adi Nufriana
+                            <h5>
+                                <i class="far fa-id-card mr-2"></i> Devi Adi Nufriana
                             </h5>
-                            <i class="fas fa-info-circle"></i> Don't Need to Talk, Just Show Your Code.
+                            <h6>
+                                <i class="fas fa-info-circle mr-2"></i> a technology addict is never tired of stopping
+                                learning new things related to technology
+                            </h6>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7">
-                    <h4 data-aos="fade-down" data-aos-duration="2000" class="card-title text-right text-light">KEMAMPUAN</h4>
-                    <div class="card collapsed" data-aos="fade-right" data-toggle="collapse" data-target="#panel1">
-                        <div class="card-body">
-                            <div class="card-title">Javascript <i class="fas fa-arrow-up float-right"></i></div>
-                            <p class="card-text collapse" id="panel1">
-                                Merupakan bahasa pemrograman utama yang dikuasai, dengan pengalaman mengembangkan
-                                website
-                                <a href="http://brilife.co.id/digiform"> SPAJ Digital </a> menggunakan <a
-                                    href="https://reactjs.org/">ReactJS</a> untuk frontend dengan
-                                template <a href="https://material-ui.com/"> material-ui</a>. dan untuk mengembangkan
-                                backend
-                                menggunakan teknologi <a href="https://nodejs.org/en/"> nodejs </a>
-                            </p>
-                            <label>Skill</label>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div>
-                            </div>
+                <div class="col-md col-12">
+                    <!-- <h4 class="text-right" style="color: #182153;">PROFILE</h4>
+                    <hr> -->
+                    <div class="card-body">
+                        <h4> Devi Adi Nufriana </h4>
+                        <h5> Software Enginer </h5>
+                        <!-- <hr>
+                        <div> Phone: <br> 085642612283 </div> -->
+                        <br>
+                        <div> Email: <br> deanheart09@gmail.com </div>
+                        <br>
+                        <div> Date of Birth: <br> December, 8th, 1995 </div>
+                    </div>
+                </div>
+                <!-- <div class="card collapsed" data-toggle="collapse" data-target="#panel1">
+                    <div class="card-body">
+                        <div class="card-title">Javascript <i class="fas fa-arrow-up float-right"></i></div>
+                        <p class="card-text collapse" id="panel1">
+                            Merupakan bahasa pemrograman utama yang dikuasai, dengan pengalaman mengembangkan
+                            website
+                            <a href="http://brilife.co.id/digiform"> SPAJ Digital </a> menggunakan <a
+                                href="https://reactjs.org/">ReactJS</a> untuk frontend dengan
+                            template <a href="https://material-ui.com/"> material-ui</a>. dan untuk mengembangkan
+                            backend
+                            menggunakan teknologi <a href="https://nodejs.org/en/"> nodejs </a>
+                        </p>
+                        <label>Skill</label>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div>
                         </div>
                     </div>
+                </div> -->
 
-                    <div class="card collapsed" data-aos="fade-left" data-toggle="collapse" data-target="#panel2">
+                <!-- <div class="card collapsed"  data-toggle="collapse" data-target="#panel2">
                         <div class="card-body">
                             <div class="card-title">PHP <i class="fas fa-arrow-up float-right"></i></div>
                             <p class="card-text collapse" id="panel2">
@@ -100,7 +139,7 @@
                         </div>
                     </div>
 
-                    <div class="card collapsed" data-aos="fade-right" data-toggle="collapse" data-target="#panel3">
+                    <div class="card collapsed" data-toggle="collapse" data-target="#panel3">
                         <div class="card-body">
                             <div class="card-title">Database <i class="fas fa-arrow-up float-right"></i></div>
                             <p class="card-text collapse" id="panel3">
@@ -114,12 +153,47 @@
                                     aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:50%"></div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div> -->
             </div>
         </div>
     </main>
+    <div class="page" id="page3">
+        <div class="container-fluid card-body">
+            <h3 style="text-align: center;">EDUCATION</h3>
+            <hr>
+            <div class="row" style="margin-left: 20rem; margin-right: 20rem; margin-bottom: 1rem;">
+                <div class="col-md col-12 text-right" style="border-right: 1px solid black;">2012 - 2014 <br> TENIK AUDIO VIDEO</div>
+                <div class="col-md-auto"></div>
+                <div class="col-md col-12">SMK NEGERI 1 ADIWERNA TEGAL</div>
+            </div>
 
+            <div class="row" style="margin-left: 20rem; margin-right: 20rem; margin-bottom: 1rem;">
+                <div class="col-md col-12 text-right" style="border-right: 1px solid black;">2014 - 2019 <br> TEKNIK INFORMATIKA</div>
+                <div class="col-md-auto"></div>
+                <div class="col-md col-12">UNIVERSITAS MUHADI SETIABUDI BREBES</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="page4">
+        <div class="container card-body">
+            <h3 style="text-align: center;">ANY QUESTION ? SEND EMAIL TO ME</h3>
+            <hr>
+            <div class="row" style="margin-left: 10rem; margin-right: 10rem; margin-bottom: 1rem;">
+                <div class="col-md col-12">
+                    <textarea placeholder="your question" class="form-control col-12" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="col-md col-12">
+                    <h6>Header</h6>
+                    <input type="text" class="form-control mt-1">
+                    <h6 class="mt-3">Your Mail</h6>
+                    <input type="text" class="form-control mt-1">
+                    <button class="btn btn-primary mt-3">Send Mail</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -135,7 +209,7 @@
 
                 $('html, body').animate({
                     scrollTop: $(hash).offset().top
-                }, 800, function () {
+                }, 700, function () {
                     window.location.hash = hash;
                 });
             }

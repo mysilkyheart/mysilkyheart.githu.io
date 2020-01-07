@@ -1,12 +1,13 @@
 body {
-  background-image: linear-gradient(to right bottom, #52de9880, #3c9d9b6f),
-    url("https://www.collegechoice.net/wp-content/uploads/2018/04/Best-Online-Masters-in-Computer-Programming-Degree.jpg");
+  /* background-image: linear-gradient(to right bottom, #52de9880, #3c9d9b6f),
+    url("https://www.collegechoice.net/wp-content/uploads/2018/04/Best-Online-Masters-in-Computer-Programming-Degree.jpg"); */
+  background-color: #F1F1F1;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   background-attachment: fixed;
   background-position: top;
-  font-family: "Numans", sans-serif;
+  font-family: 'Alegreya', serif;
 }
 
 .page {
@@ -17,26 +18,28 @@ body {
 }
 
 .card-title {
-  color: #394a6d
+  color: #182153
 }
 
 .card {
-  border-radius: 5px;
-  background: rgba(227, 230, 228, 0.8);
+
+  /* border-radius: 5px; */
+  background: #f1f1f1;
   cursor: pointer;
   transition: all 2s linear;
   margin-bottom: 20px;
   flex: 0 0 auto;
+
 }
 
 .card:hover {
-  border: 5px solid black;
+  /* border: 1px solid black; */
   transition: transform 0.7s;
 }
 
 .navbar {
-  background: rgba(230, 227, 229, 0.8);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* background: #2980b9; */
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 .progress-bar {
@@ -50,22 +53,12 @@ body {
 
 
 .nav-link {
-  border: 1px solid 394a6d;
+  /* border: 1px solid #182153; */
   margin: 5px;
   border-radius: 5px;
 }
 
-.navbar {
-  background-color: #394a6d57;
-  /* color: white; */
-}
-
-.active {
-  background-color: #394a6d;
-  /* color: white */
-}
-
-.card.collapsed .fa-arrow-up {
+/* .card.collapsed .fa-arrow-up {
   transform: rotate(0deg);
   transition: .3s transform ease-in-out;  
 }
@@ -73,10 +66,6 @@ body {
 .card .fa-arrow-up {
   transform: rotate(180deg);
   transition: .3s transform ease-in-out;
-}
-
-/* .card.collapsed .fa-arrow-down {
-  display: block;
 } */
 
 .card .fa-arrow-down {
@@ -88,10 +77,10 @@ body {
 }
 
 .text-box {
-  color: aliceblue;
+  /* color: aliceblue; */
   font-size: 4rem;
 }
-
+/* 
 .header-title {
   animation-name: moveToRight;
   animation-duration: 2s;
@@ -100,7 +89,7 @@ body {
 .sub-header {
   animation-name: moveToRight;
   animation-duration: 7s;
-}
+} */
 
 #btn-page {
   animation: ease-out 3s;
