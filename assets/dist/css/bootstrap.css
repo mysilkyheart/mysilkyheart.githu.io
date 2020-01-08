@@ -4215,7 +4215,7 @@ input[type="button"].btn-block {
   -ms-flex-positive: 1;
   flex-grow: 1;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: center
 }
 
 .navbar-toggler {

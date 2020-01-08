@@ -10,6 +10,10 @@ body {
   font-family: 'Alegreya', serif;
 }
 
+.fa-bars {
+  cursor: pointer;
+}
+
 .page {
   height: 100vh;
   display: grid;
@@ -25,9 +29,9 @@ body {
 
   /* border-radius: 5px; */
   background: #f1f1f1;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: all 2s linear;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   flex: 0 0 auto;
 
 }
@@ -37,10 +41,10 @@ body {
   transition: transform 0.7s;
 }
 
-.navbar {
-  /* background: #2980b9; */
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-}
+/* .navbar {
+   background: #2980b9; 
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+} */
 
 .progress-bar {
   -webkit-transition: none !important;
@@ -52,11 +56,11 @@ body {
 }
 
 
-.nav-link {
-  /* border: 1px solid #182153; */
-  margin: 5px;
-  border-radius: 5px;
-}
+/* .nav-link {
+   border: 1px solid #182153;
+   margin: 5px;
+   border-radius: 5px;
+} */
 
 /* .card.collapsed .fa-arrow-up {
   transform: rotate(0deg);
@@ -80,12 +84,13 @@ body {
   /* color: aliceblue; */
   font-size: 4rem;
 }
-/* 
+ 
 .header-title {
-  animation-name: moveToRight;
-  animation-duration: 2s;
+  /* animation-name: moveToRight;
+  animation-duration: 2s; */
+  font-size: 4rem;
 }
-
+/*
 .sub-header {
   animation-name: moveToRight;
   animation-duration: 7s;
