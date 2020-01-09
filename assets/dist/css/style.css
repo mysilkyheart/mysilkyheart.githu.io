@@ -1,7 +1,7 @@
 body {
   /* background-image: linear-gradient(to right bottom, #52de9880, #3c9d9b6f),
     url("https://www.collegechoice.net/wp-content/uploads/2018/04/Best-Online-Masters-in-Computer-Programming-Degree.jpg"); */
-  background-color: #F1F1F1;
+  background-color: #ffffff;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -82,13 +82,13 @@ body {
 
 .text-box {
   /* color: aliceblue; */
-  font-size: 4rem;
+  font-size: 6vh;
 }
  
 .header-title {
   /* animation-name: moveToRight;
   animation-duration: 2s; */
-  font-size: 4rem;
+  font-size: 6vh;
 }
 /*
 .sub-header {

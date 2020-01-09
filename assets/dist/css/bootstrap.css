@@ -4557,7 +4557,7 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: #ffffff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -6508,7 +6508,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #3c9d9b !important;
+  background-color: #182153 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -6518,7 +6518,7 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #6c757d !important;
+  background-color: #f1f1f1 !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
