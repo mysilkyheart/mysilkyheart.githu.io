@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- // https://colorhunt.co/palette/157179 -->
 
 <head>
     <meta charset="UTF-8">
@@ -21,40 +20,7 @@
     <link rel="icon" href="./assets/dist/image/avatar.png">
 
     <style>
-        @keyframes borderToLeft {
-            0% {
-                width: 0;
-                height: 0;
-                border-top: 1px solid #182153;
-                border-right: 1px solid #182153;
-
-            }
-
-            100% {
-                width: 100%;
-                height: 100%;
-                border-top: 1px solid #182153;
-                border-right: 1px solid #182153;
-            }
-        }
-
-        @keyframes borderToRight {
-            0% {
-                width: 0%;
-                height: 0%;
-                border-bottom: 1px solid #182153;
-                border-left: 1px solid #182153;
-            }
-
-            100% {
-                width: 100%;
-                height: 100%;
-                border-bottom: 1px solid #182153;
-                border-left: 1px solid #182153;
-            }
-        }
-
-        @media only screen and (max-width: 600px) {
+        @media (max-width: 1140px) {
             #nav {
                 display: none;
             }
@@ -64,23 +30,40 @@
             }
         }
 
-        @media only screen and (min-width: 600px) {
+        @media (min-width: 1140px) {
             #background {
                 height: 100%;
             }
         }
 
-
-        #border-top {
-            position: absolute;
-            -webkit-animation-name: borderAnimate;
-            animation: borderToLeft 5s;
+        .border-bottom {
+            width: 100%;
+            height: 10px;
+            position: relative;
+            z-index: 100;
+            background: #182153;
+            -webkit-transition: width 2s;
+            /* For Safari 3.1 to 6.0 */
+            transition: width 2s;
         }
 
-        #border-bottom {
+        /* .border-top:hover {
+            width: 100%;
+        } */
+
+        .border-right {
+            width: 10px;
+            height: relative;
             position: absolute;
-            -webkit-animation-name: borderAnimate;
-            animation: borderToRight 5s;
+            z-index: 100;
+            background: #182153;
+            -webkit-transition: width 2s;
+            /* For Safari 3.1 to 6.0 */
+            transition: width 2s;
+        }
+
+        .border-right:hover {
+            height: 100%;
         }
     </style>
 
@@ -146,38 +129,40 @@
 
     <main class="page" id="profile" style="background-color:#f1f1f1">
         <div class="container">
-            <div class="row" style="border: 1px solid #182153">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-md-auto mr-3 mb-3">
-                            <img src="./assets/image/avatar.jpg" style="-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            <div class="border-right"></div>
+            <div class="card-body" style="border: 1px solid #182153; background-color:#ffffff; z-index: 2;">
+                <div class="row">
+                    <div class="col-md-auto mb-3">
+                        <img src="./assets/image/avatar.jpg" style="-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
                                 filter: grayscale(100%); width: 18rem;" class="card-img-top">
-                        </div>
-                        <div class="col-md">
-                            <h4> Devi Adi Nufriana </h4>
-                            <h5> Software Enginer </h5>
-                            <div> Email: <br> deanheart09@gmail.com </div>
-                            <div> Date of Birth: <br> December, 8th, 1995 </div> <br>a technology addict is never
-                            tired of stopping
-                            learning new things related to technology <br>
-                            <div class="row mt-3">
-                                <a class="col-1" target="_blank"
-                                    href="https://www.linkedin.com/in/devi-adi-nufriana-6a174a12a/">
-                                    <i class="fab fa-linkedin fa-2x"></i>
-                                </a>
-                                <a class="col-1" target="_blank" href="https://github.com/mysilkyheart">
-                                    <i class="fab fa-github-square fa-2x"></i>
-                                </a>
-                            </div>
+                    </div>
+                    <div class="col-md">
+                        <h4> Devi Adi Nufriana </h4>
+                        <h5> Software Enginer </h5>
+                        <div> Email: <br> deanheart09@gmail.com </div>
+                        <div> Date of Birth: <br> December, 8th, 1995 </div> <br>a technology addict is never
+                        tired of stopping
+                        learning new things related to technology <br>
+                        <div class="row mt-3">
+                            <a class="col-1" target="_blank"
+                                href="https://www.linkedin.com/in/devi-adi-nufriana-6a174a12a/">
+                                <i class="fab fa-linkedin fa-2x"></i>
+                            </a>
+                            <a class="col-1" target="_blank" href="https://github.com/mysilkyheart">
+                                <i class="fab fa-github-square fa-2x"></i>
+                            </a>
                         </div>
                     </div>
-
                 </div>
             </div>
+            <div class="border-bottom"></div>
+        </div>
     </main>
 
+    
     <div class="page" id="education">
         <div class="container card-body">
+     
             <h3 style="text-align: center;">EDUCATION</h3>
             <hr>
             <div class="row" style="margin-bottom: 1rem;">
@@ -298,10 +283,6 @@
 
 
 <script>
-
-    // if (window.screen.width <= 800) {
-    //     document.getElementById('nav').classList.add('collapse')
-    // }
 
     $(document).ready(function () {
 
