@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./assets/dist/css/animate.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
+
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/code-fx/Pure-CSS3-Animated-Border@V1.0/css/animated-border/animated-border.min.css">
 
@@ -46,10 +47,6 @@
             /* For Safari 3.1 to 6.0 */
             transition: width 2s;
         }
-
-        /* .border-top:hover {
-            width: 100%;
-        } */
 
         .border-right {
             width: 10px;
@@ -115,12 +112,15 @@
             <div class="text-box" style="background-color: #f1f1f1;">
                 <div class="card-body">
                     <div class="header-title">
-                        <span class="header" style="color: #182153"> HELLO, </span> <br>
-                        <span class="sub-header" style="color: #182153"> THANKS FOR VISIT MY PROFILE </span>
+                        <h1 id="header" style="color: #182153; letter-spacing: .1em"> </h1>
+                        <h2 style="color: #182153"> <span id="iam" style="display: none;">I am</span> <span
+                                id="sub-header" style="color: #28A745"></span> </h2>
                     </div>
-                    <a href="#profile">
-                        <button id="btn-page" class="btn btn-success btn-lg mt-3">Learn More About
-                            Me</button>
+                    <a class="btn-header" href="#profile" style="display: none;">
+                        <button id="btn-page" class="btn btn-success btn-lg mt-1">Learn More</button>
+                    </a>
+                    <a class="btn-header" href="./assets/doc/cv.pdf" style="display: none;">
+                        <button id="btn-page" class="btn btn-info btn-lg mt-1">Get My CV</button>
                     </a>
                 </div>
             </div>
@@ -159,10 +159,10 @@
         </div>
     </main>
 
-    
+
     <div class="page" id="education">
         <div class="container card-body">
-     
+
             <h3 style="text-align: center;">EDUCATION</h3>
             <hr>
             <div class="row" style="margin-bottom: 1rem;">
@@ -279,12 +279,52 @@
 <script src="./assets/dist/js/bootstrap.min.js"></script>
 <script src="./assets/dist/js/all.js"></script>
 <script src="./assets/lib/jquery.waypoints.min.js"></script>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
 
 
 <script>
 
+
+
     $(document).ready(function () {
+
+        var header = document.getElementById('header');
+
+        var typewriter = new Typewriter(header, {
+            loop: false,
+            cursor: ''
+        });
+
+        typewriter.typeString('Hey, I am Devi Adi Nufriana')
+            .pauseFor(1000)
+            .callFunction(() => {
+
+                $('#iam').fadeIn('1000', () =>
+                    $('.btn-header').fadeIn('1000')
+                )
+
+                var subHeader = document.getElementById('sub-header');
+
+                var subTypewriter = new Typewriter(subHeader, {
+                    loop: true
+                });
+
+                subTypewriter
+                    .typeString('Software Engginer.')
+                    .pauseFor(2000)
+                    .deleteAll()
+                    .typeString('Web Developer.')
+                    .pauseFor(2000)
+                    .deleteAll()
+                    .start()
+
+            })
+            .start();
+
+
+
+
 
         $("a").on('click', function (event) {
             if (this.hash !== "") {
