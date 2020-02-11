@@ -33,7 +33,7 @@
 
         @media (min-width: 1140px) {
             #background {
-                height: 100%;
+                height: 80%;
             }
         }
 
@@ -109,11 +109,11 @@
     <header class="page" id="welcome"
         style="background: #182153; background-position: top; background-repeat: no-repeat; background-size: cover; ">
         <div class="container" style="z-index: 5;">
-            <div class="text-box" style="background-color: #f1f1f1;">
-                <div class="card-body">
+            <div class="text-box" style="color: #f1f1f1;">
+                <div class="card-body float-right">
                     <div class="header-title">
-                        <h1 id="header" style="color: #182153; letter-spacing: .1em"> </h1>
-                        <h2 style="color: #182153"> <span id="iam" style="display: none;">I am</span> <span
+                        <h1 id="header" style="color: #f1f1f1; letter-spacing: .1em"> Hello, I am Devi Adi Nufriana</h1>
+                        <h2 style="color: #f1f1f1"> <span id="iam" style="display: none;">I am</span> <span
                                 id="sub-header" style="color: #28A745"></span> </h2>
                     </div>
                     <a class="btn-header" href="#profile" style="display: none;">
@@ -158,8 +158,7 @@
             <div class="border-bottom"></div>
         </div>
     </main>
-
-
+    
     <div class="page" id="education">
         <div class="container card-body">
 
@@ -289,18 +288,18 @@
 
     $(document).ready(function () {
 
-        var header = document.getElementById('header');
+        // var header = document.getElementById('header');
 
-        var typewriter = new Typewriter(header, {
-            loop: false,
-            cursor: ''
-        });
+        // var typewriter = new Typewriter(header, {
+        //     loop: false,
+        //     cursor: ''
+        // });
 
-        typewriter.typeString('Hey, I am Devi Adi Nufriana')
-            .pauseFor(1000)
-            .callFunction(() => {
+        // typewriter.typeString('Hey, I am Devi Adi Nufriana')
+        //     .pauseFor(1000)
+        //     .callFunction(() => {
 
-                $('#iam').fadeIn('1000', () =>
+                $('#iam').fadeIn('100', () =>
                     $('.btn-header').fadeIn('1000')
                 )
 
@@ -311,7 +310,7 @@
                 });
 
                 subTypewriter
-                    .typeString('Software Engginer.')
+                    .typeString('Software Engineer.')
                     .pauseFor(2000)
                     .deleteAll()
                     .typeString('Web Developer.')
@@ -319,12 +318,8 @@
                     .deleteAll()
                     .start()
 
-            })
-            .start();
-
-
-
-
+            // })
+            // .start();
 
         $("a").on('click', function (event) {
             if (this.hash !== "") {
