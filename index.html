@@ -7,386 +7,100 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Devi Adi Nufriana</title>
-    <link rel="stylesheet" href="./assets/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="./assets/dist/css/all.css">
     <link rel="stylesheet" href="./assets/dist/css/style.css">
-    <link rel="stylesheet" href="./assets/dist/css/box-shadow.min.css">
-    <link rel="stylesheet" href="./assets/dist/css/animate.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
-
     <link rel="icon" href="./assets/image/icon.png">
-
-    <style>
-        @media (max-width: 1140px) {
-            #nav {
-                display: none;
-            }
-
-            #background {
-                width: 100%;
-            }
-        }
-
-        @media (min-width: 1140px) {
-            #background {
-                height: 80%;
-            }
-        }
-
-        .border-bottom {
-            width: 100%;
-            height: 10px;
-            position: relative;
-            z-index: 100;
-            background: #182153;
-            -webkit-transition: width 2s;
-            /* For Safari 3.1 to 6.0 */
-            transition: width 2s;
-        }
-
-        .border-right {
-            width: 10px;
-            height: relative;
-            position: absolute;
-            z-index: 100;
-            background: #182153;
-            -webkit-transition: width 2s;
-            /* For Safari 3.1 to 6.0 */
-            transition: width 2s;
-        }
-
-        .border-right:hover {
-            height: 100%;
-        }
-    </style>
 
 </head>
 
-<body data-spy="scroll" data-target="#nav" data-offset="0">
-    <div id="display">
-        <nav class="navbar navbar-collapse navbar-expand-lg fixed-top" id="nav" style="background-color: #f1f1f1;">
-            <div class="m-4" id="navbarText" style="font-size: 4vh; color: #182153;">Devi Adi Nufriana</div>
-            <button class="navbar-toggler border" type="button" data-toggle="collapse" data-target="#contentNavbar"
-                aria-controls="contentNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars fa-lg"></i>
-            </button>
-
-            <div class="ml-auto">
-                <ul class="nav nav-pills" id="contentNavbar">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#welcome"> WELCOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#profile"> PROFILE </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education"> EDUCATION </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience"> EXPERIENCE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skill"> SKILL </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contactme"> CONTACT ME </a>
-                    </li>
-                </ul>
-            </div>
+<body>
+    <header>
+        <div class="title-header" id="title">Welcome</div>
+        <nav>
+            <ul>
+                <li>
+                    <a class="active" href="#Welcome"> HOME </a>
+                </li>
+                <li>
+                    <a href="#Profile"> PROFILE </a>
+                </li>
+            </ul>
         </nav>
-
-        <div >
-            <img id="background" src="./assets/image/bg.JPG"
-                style="position: absolute; -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-            filter: grayscale(100%); background-size:cover; clip-path: polygon(0 0, 100% 0, 0 100%, 0% 100%); opacity: 0.6; z-index: 1; ">
-
-            <div class="page" id="welcome"
-                style="background: #182153; background-position: top; background-repeat: no-repeat; background-size: cover; ">
-                <div class="container" style="z-index: 5;">
-                    <div class="text-box" style="color: #f1f1f1;">
-                        <div class="card-body float-right">
-                            <div style="display: none;" class="header-title">
-                                <h1 id="header" style="color: #f1f1f1; letter-spacing: .1em; font-size: 4vh; "> Hello, I am Devi Adi Nufriana
-                                </h1>
-                                <h2 style="color: #f1f1f1; font-size: 4vh;"> <span id="iam">I am</span> <span
-                                        id="sub-header" style="color: #28A745"></span> </h2>
-                            </div>
-                            <a class="btn-header" href="#profile" style="display: none;">
-                                <button id="btn-page" class="btn btn-success btn-lg mt-1">Learn More</button>
-                            </a>
-                            <a class="btn-header" href="./assets/doc/cv.pdf" style="display: none;">
-                                <button id="btn-page" class="btn btn-info btn-lg mt-1">Get My CV</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="page" id="profile" style="background-color:#f1f1f1">
-                <div class="container">
-                    <div class="border-right"></div>
-                    <div class="card-body" style="border: 1px solid #182153; background-color:#ffffff; z-index: 2;">
-                        <div class="row">
-                            <div class="col-md-auto mb-3">
-                                <img src="./assets/image/avatar.jpg" style="-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-                                    filter: grayscale(100%); width: 18rem;" class="card-img-top">
-                            </div>
-                            <div class="col-md">
-                                <h4> Devi Adi Nufriana </h4>
-                                <h5> Software Enginer </h5>
-                                <div> Email: <br> deanheart09@gmail.com </div>
-                                <div> Date of Birth: <br> December, 8th, 1995 </div> <br>a technology addict is never
-                                tired of stopping
-                                learning new things related to technology <br>
-                                <div class="row mt-3">
-                                    <a class="col-1" target="_blank"
-                                        href="https://www.linkedin.com/in/devi-adi-nufriana-6a174a12a/">
-                                        <i class="fab fa-linkedin fa-2x"></i>
-                                    </a>
-                                    <a class="col-1" target="_blank" href="https://github.com/mysilkyheart">
-                                        <i class="fab fa-github-square fa-2x"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border-bottom"></div>
-                </div>
-            </div>
-
-            <div class="page" id="education">
-                <div class="container card-body">
-
-                    <h3 style="text-align: center;">EDUCATION</h3>
-                    <hr>
-                    <div class="row" style="margin-bottom: 1rem;">
-                        <div class="col-md col-12" data-aos="fade-right" data-aos-duration="2000">2014 - 2019 <br>
-                            TEKNIK
-                            INFORMATIKA</div>
-                        <div style="border: 1px solid black;"></div>
-                        <div class="col-md col-12" data-aos="fade-left" data-aos-duration="2000">
-                            UNIVERSITAS MUHADI SETIABUDI BREBES <br>
-                            Jl. Pangeran Diponegoro No.KM.2, Rw. 11, Pesantunan, Kec. Wanasari, Kabupaten Brebes, Jawa
-                            Tengah
-                            52221
-                        </div>
-                    </div>
-
-                    <div class="row" style="margin-bottom: 1rem;">
-                        <div class="col-md col-12" data-aos="fade-right" data-aos-duration="2000">2012 - 2014 <br> TENIK
-                            AUDIO VIDEO</div>
-                        <div style="border: 1px solid black;"></div>
-                        <div class="col-md col-12" data-aos="fade-left" data-aos-duration="2000">
-                            SMK NEGERI 1 ADIWERNA TEGAL <br>
-                            Jalan Raya 2, Pesarean, Adiwerna, Pekuncen, Pesarean, Kec. Adiwerna, Tegal, Jawa Tengah
-                            16320
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="page" id="experience">
-                <div class="container card-body">
-                    <h3 style="text-align: center;">EXPERIENCE</h3>
-                    <hr>
-                    <div class="row" style="margin-bottom: 1rem;">
-                        <div class="col-md col-12" data-aos="fade-right" data-aos-duration="2000">2019 - Present <br>
-                            Software
-                            Enginer</div>
-                        <div style="border: 1px solid black;"></div>
-                        <div class="col-md col-12" data-aos="fade-left" data-aos-duration="2000">
-                            BRI Life <br>
-                            Graha Irama Lt. Mezzanine
-                            Jl. H.R.Rasuna Said Blok X-1 Kav 1 & 2 Jakarta 12950
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="page" id="skill">
-                <div class="container card-body">
-                    <h3 style="text-align: center;">SKILL</h3>
-                    <hr>
-
-                    <div class="collapsed mb-3" data-toggle="collapse" data-target="#panel1">
-                        <div data-element="90%" class="progress-element">
-                            <div class="card-title">Javascript </div>
-                            <div class="card-subtitle">Node JS, Reactjs, React Native</div>
-                            <label class="mt-3">Skill</label>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
-                                    role="progressbar" data-percent="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="collapsed mb-3" data-toggle="collapse" data-target="#panel2">
-                        <div data-element="50%" class="progress-element">
-                            <div class="card-title">PHP</div>
-                            <div class="card-subtitle">Codeigniter</div>
-                            <label class="mt-3">Skill</label>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
-                                    role="progressbar" data-percent="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="collapsed mb-3" data-toggle="collapse" data-target="#panel2">
-                        <div data-element="80%" class="progress-element">
-                            <div class="card-title">CSS Framework</div>
-                            <div class="card-subtitle">Bootstrap</div>
-                            <label class="mt-3">Skill</label>
-                            <div class="progress">
-                                <div aria-valuenow="25" data-percent="60"
-                                    class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
-                                    role="progressbar" data-percent="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="page" id="contactme">
-                <div class="container">
-                    <h3 style="text-align: center;">CONTACT ME</h3>
-                    <hr>
-                    <form id="contact-form" class="row">
-                        <div class="col-md col-12">
-                            <input type="text" name="subject" placeholder="Subject" class="form-control mb-3 col-12"
-                                required>
-                            <textarea name="message" placeholder="Message" class="form-control col-md col-12 mb-3"
-                                name="" id="" cols="10" rows="5" required></textarea>
-                        </div>
-
-                        <div class="col-md col-12">
-                            <input type="text" name="from_name" placeholder="Name" class="form-control col-12" required>
-                            <input type="email" name="email" placeholder="Email" class="form-control mt-3 col-12"
-                                required>
-                            <input type="text" name="to_name" value="Portofolio" hidden required>
-                            <button type="submit" class="btn btn-primary mt-3 col-12 col-md-auto">Send Mail</button>
-                        </div>
-                    </form>
-
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </header>
+    <div id="mySidenav" class="sidenav">
+        <a href="#Welcome" id="home">Home</a>
+        <a href="#Profile" id="profile">Profile</a>
+    </div>
+    <section>
+        <img src="./assets/image/bg.jpeg" class="background-image">
+        <div class="page primary" id="Welcome">
+            <div class="main-page page-left">
+                <h1 style="margin-bottom: 10px;">
+                    <span
+                        style="background-color: #f1f1f1; color: #182153; padding: 10px; border-radius: 2px; font-size: 24px;">Hello,</span>
+                </h1>
+                <h1 class="main-title"> I am Devi Adi Nufriana </h1>
+                <h2 class="main-subtitle">
+                    <span>I am</span> <span id="sub-header" style="color:#28A745;"></span>
+                </h2>
+                <div class="group-button">
+                    <a href="#profile">
+                        <button class="btn green">Learn More</button>
+                    </a>
                 </div>
             </div>
         </div>
 
-    </div>
-    <div id="loader">
-        <div class="page" style="z-index: 5; background-color: #182153;">
-            <div class="card-body">
-                <div class="sk-chase">
-                    <div class="sk-chase-dot"></div>
-                    <div class="sk-chase-dot"></div>
-                    <div class="sk-chase-dot"></div>
-                    <div class="sk-chase-dot"></div>
-                    <div class="sk-chase-dot"></div>
-                    <div class="sk-chase-dot"></div>
+        <div class="page secondary" id="Profile">
+            <div class="main-page">
+                <div class="card">
+                    <img src="./assets/image/avatar.jpg" class="avatar">
+                    <div class="card-body third">
+                        <h4 class="card-title"> Devi Adi Nufriana </h4>
+                        <h5 class="card-subtitle"> Software Enginer </h5>
+                        <hr>
+                        <div class="card-article" style="margin-top: 10px;">
+                            <div> Email : deanheart09@gmail.com </div>
+                            <div> Date of Birth : December, 8th, 1995 </div>
+                            <div> Work : BRI LIFE </div>
+                            <br>a technology addict is never
+                            tired of stopping
+                            learning new things related to technology <br>
+                            <div>
+                                <a target="_blank" href="https://www.linkedin.com/in/devi-adi-nufriana-6a174a12a/">
+                                    <i class="fab fa-linkedin fa-2x"></i>
+                                </a>
+                                <a target="_blank" href="https://github.com/mysilkyheart">
+                                    <i class="fab fa-github-square fa-2x"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="group-button">
+                            <a href="./assets/doc/cv.pdf">
+                                <button class="btn primary small">resume</button>
+                            </a>
+                            <a target="_blank" href="https://www.linkedin.com/in/devi-adi-nufriana-6a174a12a/">
+                                <button class="btn primary small">linkedin</button>
+                            </a>
+                            <a target="_blank" href="https://github.com/mysilkyheart">
+                                <button class="btn primary small">github</button>
+                            </a>
+                            <a target="_blank" href="https://www.instagram.com/deanufriana/">
+                                <button class="btn primary small">instagram</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </body>
 
-<script src="./assets/dist/js/jquery.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="./assets/dist/js/bootstrap.min.js"></script>
-<script src="./assets/dist/js/all.js"></script>
-<script src="./assets/lib/jquery.waypoints.min.js"></script>
-<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
-
-
-<script>
-
-    document.onreadystatechange = function () {
-        if (document.readyState !== "complete") {
-            document.querySelector("#display").style.visibility = "hidden";
-            document.querySelector("#loader").style.visibility = "visible";
-        } else {
-            document.querySelector("#loader").style.display = "none";
-            document.querySelector("#display").style.visibility = "visible";
-        }
-    };
-
-    $(document).ready(function () {
-
-        $(".header-title").animate({ right: 200, opacity: "show" }, 1500);
-        $(".btn-header").animate({ right: 200, opacity: "show" }, 1500)
-
-        var subHeader = document.getElementById('sub-header');
-
-        var subTypewriter = new Typewriter(subHeader, {
-            loop: true
-        });
-
-        subTypewriter
-            .typeString('Software Engineer.')
-            .pauseFor(2000)
-            .deleteAll()
-            .typeString('Web Developer.')
-            .pauseFor(2000)
-            .deleteAll()
-            .start()
-
-        $("a").on('click', function (event) {
-            if (this.hash !== "") {
-                event.preventDefault();
-
-                var hash = this.hash;
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 700, function () {
-                    window.location.hash = hash;
-                });
-            }
-        });
-
-        $(".progress-element").each(function () {
-            let data = $(this).data('element')
-            let progress = $(this).children('.progress').children('.progress-bar')
-
-            $(this).waypoint(function () {
-                progress.animate({
-                    width: data
-                }, 1000);
-            }, {
-                triggerOnce: true,
-                offset: 'bottom-in-view'
-            });
-        });
-
-    });
-
-    (function () {
-        emailjs.init('user_kfXICbG02NgjK2xDICBrn');
-        AOS.init({ disable: 'mobile' });
-    })();
-
-
-    window.onload = function () {
-
-        document.getElementById('contact-form').addEventListener('submit', function (event) {
-            event.preventDefault();
-            const btnSubmit = this.getElementsByClassName('btn')[0]
-
-            btnSubmit.innerHTML = `<i class='fas fa-spinner fa-spin'> </i>`
-            btnSubmit.disabled = true
-            const sendEmail = emailjs.sendForm('default_service', 'template_tm1cJXaV', this);
-
-            setTimeout(() => {
-                if (sendEmail) {
-                    btnSubmit.innerHTML = `Send Mail`
-                    btnSubmit.disabled = false
-                    alert('Email Telah Terkirim')
-                }
-            }, 3000);
-
-        });
-    }
-
-</script>
+<script src="lib/noframework.waypoints.min.js"></script>
+<script src="lib/typewritter.js"></script>
+<script src="assets/dist/js/scripts.js"></script>
 
 </html>
