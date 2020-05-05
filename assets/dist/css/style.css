@@ -5,7 +5,6 @@
 }
 
 html {
-
   scroll-behavior: smooth;
 }
 
@@ -16,10 +15,6 @@ body {
 
 body::-webkit-scrollbar {
   display: none;
-}
-
-.fa-bars {
-  cursor: pointer;
 }
 
 #mySidenav a {
@@ -42,12 +37,12 @@ body::-webkit-scrollbar {
 
 #home {
   top: 20px;
-  background-color: #28A745;
+  background-color: #28a745;
 }
 
 #profile {
   top: 90px;
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 .primary {
@@ -67,7 +62,7 @@ body::-webkit-scrollbar {
 
 .green {
   color: #f1f1f1;
-  background-color: #28A745;
+  background-color: #28a745;
 }
 
 .small {
@@ -88,35 +83,64 @@ header {
 header .title-header {
   flex: 1;
   margin: 0 auto;
-  font-size: 4vh;
+  font-size: 30px;
   color: #182153;
   padding: 25px;
 }
 
-@media screen and (max-width: 1140px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 750px) {
   header {
-      display: none;
+    display: none;
   }
 
   .background-image {
-      width: 80vw;
+    width: 80vw;
+  }
+
+  .page {
+    height: 100vh;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .avatar {
+    width: 100%;
+    object-fit: cover;
+    height: 30vh;
   }
 }
 
-
-@media screen and (min-width: 1140px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 750px) {
   .background-image {
-      height: 80vh;
+    height: 800px;
   }
 
   #mySidenav {
-      display: none;
+    display: none;
   }
 
   .page-left {
-      margin-left: 30vw;
+    margin-left: 30vw;
   }
-}
+
+  .page {
+    height: 1000px;
+  }
+
+  .card {
+    flex-direction: row;
+    /* width: 900px; */
+  }
+
+  .avatar {
+    object-fit: cover;
+    width: 350px;
+  }
+} 
 
 nav {
   margin-right: 30px;
@@ -130,7 +154,6 @@ nav ul li {
   display: inline;
   border-radius: 5px;
 }
-
 
 nav ul li a {
   color: #f1f1f1;
@@ -170,21 +193,17 @@ section {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  height: 100vh;
-  margin-top: 5px;
-
 }
 
 .main-page {
   align-self: center;
-  padding-right: 5vw;
-  padding-left: 5vw;
+  padding: 0 5vw;
   z-index: 1;
 }
 
 .main-title {
   color: #f1f1f1;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   font-size: 40px;
 }
 
@@ -195,9 +214,6 @@ section {
 
 .background-image {
   position: absolute;
-  -webkit-filter: grayscale(100%);
-  /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
   background-size: inherit;
   clip-path: polygon(0 0, 100% 0, 0 100%, 0% 100%);
   opacity: 0.6;
@@ -207,12 +223,18 @@ section {
 }
 
 .group-button {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 30px;
   margin-right: 10px;
 }
 
+.group-button > a {
+  margin: 3px 3px 0 0;
+}
+
 .btn {
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px;
   border-radius: 3px;
   border: 0ch;
   font-size: 20px;
@@ -222,34 +244,6 @@ section {
 
 .btn:hover {
   background-color: rgb(55, 151, 77);
-}
-
-@media screen and (max-width: 1100px) {
-  .card {
-      flex-direction: column;
-  }
-
-  .avatar {
-      width: 100%;
-  }
-
-}
-
-@media screen and (min-width: 1100px) {
-  .card {
-      flex-direction: row;
-      width: 1000px;
-  }
-
-  .avatar {
-      width: 400px;
-  }
-}
-
-.avatar {
-  -webkit-filter: grayscale(100%);
-  /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
 }
 
 .card {

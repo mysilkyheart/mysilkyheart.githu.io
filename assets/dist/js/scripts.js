@@ -32,7 +32,7 @@ for (let j = 0; j < continuousElements.length; j++) {
             title.innerHTML = this.element.id
             document.querySelector(`a[href='#${this.element.id}']`).classList.add('active')
         },
-        offset: 1
+        offset: 'bottom-in-view'
     })
 }
 
@@ -42,6 +42,7 @@ const typewriter = new Typewriter(app, {
     loop: false
 });
 
-typewriter.typeString('Web Developer !')
-    .pauseFor(2500)
+typewriter.typeString('software engineer')
+    .typeString('<span style="color: white"> at  </span>')
+    .typeString('bri life')
     .start();
