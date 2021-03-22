@@ -1,0 +1,41 @@
+/* 
+Primary Color #282846
+Secondary Color #fed049
+Medium Color #007580
+Light Color #d8ebe4
+*/
+
+.btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 0ch;
+    font-weight: 900;
+    border-radius: 3px;
+}
+
+.btn--primary {
+    background-color: #28a745;
+    color: #f1f1f1;
+}
+
+.btn--secondary {
+    color: #f1f1f1;
+    background-color: #f48b29;
+}
+
+.icon {
+    background-color: #f1f1f1;
+    font-size: 18px;
+}
+
+.separator {
+    align-items: center; display: flex;position: relative;
+}
+
+.separator__text {
+    left: 50%; background-color: #f1f1f1; position: absolute; top: 50%; transform: translate(-50%, -50%); padding:1rem
+}
+
+.separator__line {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3); height: 0.3rem; width: 100%;
+}
