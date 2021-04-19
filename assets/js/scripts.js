@@ -1,6 +1,5 @@
 window.onscroll = function () { myFunction() };
 
-
 function myFunction() {
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -19,16 +18,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('js', new Date());
+
+gtag('config', 'G-5XH9HL1N8D');
 
 const app = document.getElementById('sub-header');
-
-fetch('https://api.github.com/users/deanufriana')
-    .then(res => {
-        console.log(res)
-        return res.json()
-    }).then(data => {
-        console.log(data)
-    })
 
 const date = new Date()
 const getYear = new Date().getFullYear()
