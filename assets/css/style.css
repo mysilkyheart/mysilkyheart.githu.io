@@ -140,14 +140,13 @@ body::-webkit-scrollbar {
 .bio {
   border: 1px solid black;
   background-color: #ffff;
-  height: 30rem;
   display: flex;
   margin-top: 8rem;
   margin-bottom: 5rem;
 }
 
 .bio__avatar {
-  height: 100%;
+  height: 300px;
   margin-right: 1.2rem;
 }
 
@@ -194,7 +193,6 @@ body::-webkit-scrollbar {
   .bio {
     display: flex;
     flex-direction: column;
-    height: 100vh;
   }
 
   .bio__avatar {
