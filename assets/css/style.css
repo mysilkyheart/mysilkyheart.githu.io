@@ -7,7 +7,7 @@ Light #ffffff
 */
 
 *,
-*::after, 
+*::after,
 *::before {
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@ Light #ffffff
 }
 
 html {
-  font-size: 62.5%
+  font-size: 62.5%;
 }
 
 body {
@@ -27,7 +27,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.header { 
+.header {
   width: 100vw;
   background-color: #f1f1f1;
   position: fixed;
@@ -103,25 +103,25 @@ body::-webkit-scrollbar {
 
 .home__label {
   background-color: #f1f1f1;
-  color: #182153; 
+  color: #182153;
   padding: 0.5rem 1rem;
   border-radius: 0.2rem;
   font-size: 2.4rem;
-  margin-bottom: 1rem; 
-  width:fit-content;
+  margin-bottom: 1rem;
+  width: fit-content;
 }
 
 .home__title {
   color: #d8ebe4;
   font-size: 3.6rem;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 .home__subtitle {
   color: #d8ebe4cc;
   font-size: 2.3rem;
   margin-top: 0.5rem;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 .describe {
@@ -130,7 +130,7 @@ body::-webkit-scrollbar {
 }
 
 .describe__about-me {
-  flex:1; 
+  flex: 1;
 }
 
 .about-me__detail {
@@ -155,25 +155,23 @@ body::-webkit-scrollbar {
   flex: 1;
 }
 
-
-@media only screen and (min-width:740px) {
+@media only screen and (min-width: 740px) {
   .home__center {
     position: absolute;
-    top: 50%; 
+    top: 50%;
     left: 50%;
     transform: translate(0, -50%);
   }
 
   .home__image {
     height: 100vh;
-  } 
+  }
 }
 
-
-@media only screen and (max-width:740px) {
+@media only screen and (max-width: 740px) {
   .home__center {
     position: absolute;
-    top: 50%; 
+    top: 50%;
     padding: 1rem;
     transform: translate(0, -50%);
   }
@@ -218,7 +216,7 @@ body::-webkit-scrollbar {
 .card__content {
   font-size: 1.6rem;
   list-style-type: none;
-  margin: 1.2rem 0;
+  margin: 0.6rem 0;
 }
 
 .card__button a img {
@@ -258,6 +256,8 @@ body::-webkit-scrollbar {
 }
 
 .page__content {
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 1.6rem;
 }
 
@@ -273,16 +273,16 @@ body::-webkit-scrollbar {
 
 .footer {
   height: 10rem;
-  padding:2rem;
+  padding: 2rem;
   background-color: #151515;
   color: #f8f5f1;
   align-self: center;
 }
 
 .footer__contactus ul {
-  list-style-type: none; 
-  font-size: larger; 
-  font-weight: 900;
+  list-style-type: none;
+  font-size: larger;
+  font-weight: 500;
 }
 
 .footer__contactus ul li {
@@ -291,5 +291,5 @@ body::-webkit-scrollbar {
 }
 
 .footer__contactus ul li img {
- width: 2rem;
+  width: 2rem;
 }
