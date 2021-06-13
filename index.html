@@ -6,34 +6,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&display=swap" rel="stylesheet">
-
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/component.css">
     <link rel="stylesheet" href="./assets/css/layout.css">
-    <link rel="icon" href="./assets/image/icon.png">
+    <link rel="stylesheet" href="./assets/css/typography.css">
 
+    <link rel="icon" href="./assets/image/icon.png">
     <title>Portofolio</title>
+
+    <style>
+        .timeline {
+            position: relative;
+            margin: 0 auto;
+            max-width: 1000px;
+            display: flex;
+            margin-bottom: 2rem;
+        }
+
+        .timeline::after {
+            top: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: #182153;
+            position: absolute;
+            content: ' ';
+            width: 2px;
+        }
+
+        .timeline__left {
+            text-align: right;
+            flex: 1;
+            width: 100%;
+            padding-left: 3.3rem;
+            position: relative;
+            margin-right: 3.3rem;
+            border-radius: 5px;
+        }
+
+        .timeline__left::before {
+            content: ' ';
+            background-color: #182153;
+            height: 2rem;
+            width: 2rem;
+            position: absolute;
+            right: -4.3rem;
+            top: 2px;
+            border-radius: 50%;
+        }
+
+        .timeline__right {
+            flex: 1;
+            margin-left: 3.3rem;
+            padding-right: 3.3rem;
+            border-radius: 5px;
+        }
+
+        .card {
+            margin-right: 1rem;
+            margin-left: 1rem;
+            margin-bottom: 2rem;
+            min-width: 35rem;
+            max-width: 35rem;
+            min-height: 33rem;
+            border: 1px solid #181818;
+            border-radius: 5px;
+            padding: 1rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-body {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            background-color: #f1f1f1b7;
+        }
+
+        .language-and-tools {
+            margin: 1.5rem 0;
+        }
+
+        .language-and-tools img {
+            margin-right: 1rem;
+        }
+    </style>
 
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__brand">Devi Adi Nufriana</div>
-    </header>
     <div class="progress-container">
         <div class="progress-bar" id="scroll-bar"></div>
     </div>
-    </div>
+    <header class="header" style="display:none;">
+        <div class="header__brand">Devi Adi Nufriana</div>
+    </header>
+
     <div class="home">
         <img src="./assets/image/bg.jpeg" class="home__image">
         <div class="home__center">
             <h1 class="home__label">Hello,</h1>
-            <div class="home__title">I am Devi Adi Nufriana</div>
-            <div class="home__subtitle">i am a Software Developer at BRI Life</div>
+            <div class="home__title">I am <span style="color:#28a745">Devi Adi Nufriana</span></div>
+            <div class="home__subtitle">i am a Software Engineer with 2 years of experience</div>
             <div class="group-button">
                 <a href="#more">
-                    <button class="btn btn--primary">Find out more</button>
+                    <button class="btn btn--success">Find out more</button>
                 </a>
                 <a href="https://drive.google.com/file/d/1RJzX_VWYWQGP4kCQivAbueowSuvQqkhV/view?usp=sharing"
                     target="_blank">
@@ -43,118 +123,173 @@
         </div>
     </div>
 
-    <div class="page" id="more">
-        <div class="page__content">
-            <div class="bio">
-                <img src="./assets/image/avatar.jpg" class="bio__avatar">
-                <div class="bio__content">
-                    <h4 class="card__title"> Devi Adi Nufriana </h4>
-                    <h5 class="card__subtitle"> Software Engineer at Bri Life </h5>
-                    <br>
-                    <hr>
-                    <br>
-                    <h5 class="card__subtitle">About me</h5>
-                    <div class="card__content">
-                        Hello, I am an IT project manager with holistic knowledge of software
-                        development.
-                        I am also experienced in
-                        coordinating with stakeholders
-                        <br>
-                    </div>
-                    <h5 class="card__subtitle">Contact me</h5>
-                    <div class="card__button">
-                        <a target="_blank" href="https://www.linkedin.com/in/devinufriana/">
-                            <img src="assets/image/icon/linkedin.png">
-                        </a>
-                        <a target="_blank" href="https://github.com/mysilkyheart"><img
-                                src="assets/image/icon/github.png"></a>
-                        <a target="_blank" href="https://www.instagram.com/deanufriana/">
-                            <img src="assets/image/icon/instagram.png">
-                        </a>
-                        <a target="_blank" href="mailto: devi.nufriana@gmail.com">
-                            <img src="assets/image/icon/email.png">
-                        </a>
-                    </div>
-                </div>
+    <div style="display: flex; min-height: 35rem; background-color: #f1f1f1;" id="more">
+        <div style="margin: auto; text-align: center">
+            <h1>About me</h1>
+            <br>
+            <p>a technology addict is never tired of stopping learning new things related to technology</p>
+            <div class="language-and-tools">
+                <img src="assets/icons/Property 1=bitbucket.png" alt="">
+                <img src="assets/icons/Property 1=ci.png" alt="">
+                <img src="assets/icons/Property 1=css_3.png" alt="">
+                <img src="assets/icons/Property 1=git.png" alt="">
+                <img src="assets/icons/Property 1=html_5.png" alt="">
+                <img src="assets/icons/Property 1=jquery.png" alt="">
+                <img src="assets/icons/Property 1=js.png" alt="">
+                <img src="assets/icons/Property 1=logos_bootstrap.png" alt="">
+                <img src="assets/icons/Property 1=logos_dart.png" alt="">
+                <img src="assets/icons/Property 1=logos_flutter.png" alt="">
+                <img src="assets/icons/Property 1=logos_terminal.png" alt="">
+                <img src="assets/icons/Property 1=node_js.png" alt="">
+                <img src="assets/icons/Property 1=npm.png" alt="">
+                <img src="assets/icons/Property 1=php.png" alt="">
+                <img src="assets/icons/Property 1=python.png" alt="">
+                <img src="assets/icons/Property 1=react.png" alt="">
+                <img src="assets/icons/Property 1=redux.png" alt="">
+                <img src="assets/icons/Property 1=sublime_text.png" alt="">
+                <img src="assets/icons/Property 1=vs_code.png" alt="">
             </div>
-
-            <div>
-                <div class="separator">
-                    <div class="separator__text">
-                        <h1>Work</h1>
-                    </div>
-                    <div class="separator__line"></div>
-                </div>
-                <br>
-                <div class="card">
-                    <h3 class="card__title">BRI Life / Software Enginer</h3>
-                    <h4 class="card__subtitle">Greater Jakarta Area, Indonesia | Feb 2019 -
-                        Maret 2021 </h4>
-                    <br>
-                    <div class="card__content">
-                        BRI Life is a national life insurance company that is a subsidiary of the largest bank in
-                        Indonesia, Bank Rakyat Indonesia (BRI). As a company that has been operating in the life
-                        insurance industry in Indonesia for more than 30 years, BRI Life is always oriented towards
-                        customer satisfaction, one of which is manifested in meeting the needs of the Indonesian people
-                        for self and family protection, both now and in the future.
-
-                        These various life insurance products offer protection; Mental and Health, Critical Illness,
-                        Protection and Investment, Education and Old Age are offered to the public through various
-                        channels owned, namely; Agency (Individual life insurance product), Corporate (Group Life
-                        Insurance product), In Branch (Bancassurance Life Insurance product) and Alternative
-                        Distribution (Micro Life Insurance Product and Digital Product).
-                    </div>
-                    <br>
-                    <h3 class="card__title">Frisidea / Software Enginer</h3>
-                    <h4 class="card__subtitle">Greater Jakarta Area, Indonesia | April 2021 -
-                        present</h4>
-                    <br>
-                    <div class="card__content">
-                        Frisidea is a technology company for software development, providing a wide range of website,
-                        mobile, and desktop controls combined with a service-oriented approach to apps.
-                    </div>
-                </div>
-            </div>
-
-            <div style="margin-top: 7rem;">
-                <div class="separator">
-                    <div class="separator__text">
-                        <h1>Project</h1>
-                    </div>
-                    <div class="separator__line"></div>
-                </div>
-                <br>
-                <div class="card">
-                    <h3 class="card__title">Sistem Skripsi Online</h3>
-                    <h4 class="card__subtitle">12/12/2018</h4>
-                    <br>
-                    <p class="card__content">The thesis process becomes more organized and faster which is carried out
-                        online which can be accessed anywhere via a browser to save time, effort and make it easier to
-                        get information on the thesis process online.
-                    </p>
-                </div>
-                <br>
-                <div class="card">
-                    <h3 class="card__title">My Life</h3>
-                    <h4 class="card__subtitle">12/12/2019</h4>
-                    <br>
-                    <p class="card__content">
-                        BRI Life – My Life is used only for employee and sales personal of BRI Life
-                        My life cover for Micro Insurance Product BRI Life.
-                        My life is a system which designed to facilitate the process registration sales personel and
-                        employee of BRI Life, new member of insurance administration with simple registration, Redeem
-                        Point for reward form product sales, and sales report.
-
-                        1) Login or register your app
-                        2) display all insurance products from BRILIFE
-                        3) buy products that interest you
-                        4) pay your product with BRIVA (Virtual Account Bank BRI payment)
-                        5) claim your product in accordance with product protection.</p>
-                </div>
-            </div>
-
         </div>
     </div>
+
+
+    <div style="background-color:white; padding-bottom:1.5rem;">
+        <div class="title-header"
+            style="display:flex; min-height: 100px; width:100%; border: 1px solid rgba(0, 0, 0, 0.425); margin-bottom:4rem">
+            <h1 style="margin: auto;">Experience</h1>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline__left">
+                <div>
+                    <h5 style="margin-bottom:0.2rem;">2019 - 2021</h5>
+                    <h5>Software Engineer</h5>
+                </div>
+            </div>
+            <div class="timeline__right">
+                <h4 style="margin-bottom:0.2rem;">BRI LIFE</h4>
+                <h5 style="margin-bottom:0.2rem;">Greater Jakarta Area, Indonesia</h5>
+                <p>
+                    BRI Life is a national life insurance company that is a subsidiary of the largest bank in
+                    Indonesia, Bank Rakyat Indonesia (BRI). As a company that has been operating in the life
+                    insurance industry in Indonesia for more than 30 years, BRI Life is always oriented towards
+                    customer satisfaction, one of which is manifested in meeting the needs of the Indonesian people for
+                    self and family protection, both now and in the future.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline__left">
+                <div>
+                    <h5 style="margin-bottom:0.2rem;">2021 - present</h5>
+                    <h5>Software Engineer</h5>
+                </div>
+            </div>
+            <div class="timeline__right">
+                <h4 style="margin-bottom:0.2rem;">Frisidea</h4>
+                <h5 style="margin-bottom:0.2rem;">Greater Jakarta Area, Indonesia</h5>
+                <p>
+                    Frisidea is a technology company for software development, providing a wide range of website,mobile,
+                    and desktop controls combined with a service-oriented approach to apps.
+                </p>
+            </div>
+        </div>
+
+        <div class="title-header"
+            style="display:flex; min-height: 100px; width:100%; border: 1px solid rgba(0, 0, 0, 0.425); margin-bottom:4rem">
+            <h1 style="margin: auto;">Project</h1>
+        </div>
+
+        <div style="display:inline-flex; flex-wrap: wrap; width: 100%; justify-content:center">
+            <div class="card" style="background-image: url('/assets/image/mylife/1.png');">
+                <div class="card-body">
+                    <div style="flex:1">
+                        <h4>Sistem Skripsi Online</h4>
+                        <p>The thesis process becomes more organized and faster which is carried out online which can be
+                            accessed anywhere via a browser to save time, effort and make it easier to get information
+                            on
+                            the thesis process online.</p>
+                        <br>
+                    </div>
+                    <div>
+                        <h5>Language And Tools:</h5>
+                        <div class="language-and-tools">
+                            <img src="/assets/icons/Property 1=ci.png" alt="">
+                            <img src="/assets/icons/Property 1=logos_bootstrap.png" alt="">
+                            <img src="/assets/icons/Property 1=jquery.png" alt="">
+                            <img src="/assets/icons/Property 1=php.png" alt="">
+                            <img src="/assets/icons/Property 1=vs_code.png" alt="">
+                        </div>
+                        <div>
+                            <button class="btn btn--secondary">Link</button>
+                            <button class="btn btn--primary">Preview</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div style="flex:1">
+                        <h4>My Life</h4>
+                        <p>BRI Life – My Life is used only for employee and sales personal of BRI Life
+                            My life cover for Micro Insurance Product BRI Life.
+                            My life is a system which designed to facilitate the process registration sales personel
+                            <span id="dots-mylife">...</span> <span id="more-mylife" style="display:none">
+                                and
+                                employee of BRI Life, new member of insurance administration with simple registration,
+                                Redeem
+                                Point for reward form product sales, and sales report.</span>
+                            <span id="read-mylife" onclick="readMore('mylife')"
+                                style="color: #281b9e !important; cursor: pointer;">read more
+                            </span>
+                        </p>
+                        <br>
+                    </div>
+
+                    <div>
+                        <h5>Language And Tools:</h5>
+                        <div class="language-and-tools">
+                            <img src="/assets/icons/Property 1=logos_flutter.png" alt="">
+                            <img src="/assets/icons/Property 1=logos_dart.png" alt="">
+                            <img src="/assets/icons/Property 1=vs_code.png" alt="">
+                        </div>
+                        <div>
+                            <button class="btn btn--secondary">Link</button>
+                            <button class="btn btn--primary">Preview</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div style="flex:1">
+                        <h4>Customer Care Center</h4>
+                        <p>Customer Care Insurance System is a system for insurance app to handle their customer about
+                            their
+                            polis.</p>
+                        <br>
+                    </div>
+
+                    <div>
+                        <h5>Language And Tools:</h5>
+                        <div class="language-and-tools" style="margin:1.2rem 0">
+                            <img src="/assets/icons/Property 1=node_js.png" alt="">
+                            <img src="/assets/icons/Property 1=npm.png" alt="">
+                            <img src="/assets/icons/Property 1=js.png" alt="">
+                            <img src="/assets/icons/Property 1=logos_bootstrap.png" alt="">
+                            <img src="/assets/icons/Property 1=vs_code.png" alt="">
+                        </div>
+                        <div>
+                            <button class="btn btn--secondary">Link</button>
+                            <button class="btn btn--primary">Preview</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <footer class="footer">
         <div class="footer__contactus">
@@ -182,6 +317,24 @@
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5XH9HL1N8D"></script>
     <script src="./assets/js/scripts.js"></script>
+
+    <script>
+        function readMore(id) {
+            var dots = document.getElementById(`dots-${id}`);
+            var moreText = document.getElementById(`more-${id}`);
+            var readButton = document.getElementById(`read-${id}`);
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                readButton.innerHTML = "read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                readButton.innerHTML = "read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
 
 </body>
 

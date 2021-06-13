@@ -14,22 +14,30 @@ Light Color #d8ebe4
 }
 
 .btn {
-  padding: 0.7rem 1.7rem;
+  padding: 0.5rem 1.5rem;
   font-size: 1.8rem;
   border: 0ch;
-  font-weight: 900;
   border-radius: 3px;
   cursor: pointer;
 }
 
+.btn:hover {
+  opacity: 0.8;
+}
+
 .btn--primary {
-  background-color: var(--accent1);
+  background-color: var(--primary);
   color: var(--secondary);
 }
 
 .btn--secondary {
-  color: var(--secondary);
   background-color: var(--accent2);
+  color: var(--secondary);
+}
+
+.btn--success {
+  background-color: var(--accent1);
+  color: var(--secondary);
 }
 
 .icon {
