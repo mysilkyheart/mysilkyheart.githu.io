@@ -1,12 +1,27 @@
-window.onscroll = function () { myFunction() };
+window.onscroll = function () {
+    myFunction();
+    showScrollTop();
+};
+
+var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
 function myFunction() {
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var scrolled = (winScroll / height) * 100;
     document.getElementById("scroll-bar").style.width = scrolled + "%";
 }
 
+showScrollTop = () => {
+    let elementID = 'about-me'
+    const currentScrollPosition = window.pageYOffset;
+    const selectElement = document.getElementById(elementID)
+    const elementOffsetTop = selectElement.offsetTop
+
+    if (currentScrollPosition > elementOffsetTop) {
+        selectElement.style.display = 'block'
+        selectElement.classList.add('animate__fadeInUp')
+    }
+}
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -30,4 +45,31 @@ const date = new Date()
 const getYear = new Date().getFullYear()
 const firstJob = new Date('12-12-2018').getFullYear()
 
-document.getElementById('year').innerHTML = getYear
+document.getElementById('year').innerHTML = getYear - firstJob
+
+function readMore(id) {
+    var dots = document.getElementById(`dots-${id}`);
+    var moreText = document.getElementById(`more-${id}`);
+    var readButton = document.getElementById(`read-${id}`);
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        readButton.innerHTML = "read more";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        readButton.innerHTML = "read less";
+        moreText.style.display = "inline";
+    }
+}
+
+function goTo(url) {
+    window.open(url)
+}
+
+
+function previewProduct() {
+    const id = document.getElementById('detail-card')
+    id.style.display = "inline-flex"
+    id.classList.add('animate__fadeInUp')
+}
