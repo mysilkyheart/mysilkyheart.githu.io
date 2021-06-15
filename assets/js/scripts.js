@@ -67,9 +67,27 @@ function goTo(url) {
     window.open(url)
 }
 
-
 function previewProduct() {
     const id = document.getElementById('detail-card')
     id.style.display = "inline-flex"
     id.classList.add('animate__fadeInUp')
 }
+
+const idForm = document.getElementById('sendMessage')
+idForm.addEventListener('submit', e => {
+    e.preventDefault()
+    const email = document.getElementById('email').value
+    const text = document.getElementById('text').value
+
+    fetch('http://api.deanufriana.xyz/sendEmail', {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, text })
+    })
+        .then((res) => res.json())
+        .then(data => alert('Your message has been sent'))
+        .catch(err => alert(JSON.stringify(err)))
+
+})
