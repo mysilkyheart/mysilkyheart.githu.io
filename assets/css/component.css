@@ -145,6 +145,7 @@ Light Color #d8ebe4
   height: 30rem;
   margin-top: 1rem;
   border-radius: 0.5rem;
+  scroll-snap-align: start;
 }
 
 .form-control {
@@ -190,5 +191,9 @@ Light Color #d8ebe4
 
   #sendMessage {
     width: 100%;
+  }
+
+  .form-control {
+    width: 95%;
   }
 }

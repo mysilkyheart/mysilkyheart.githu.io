@@ -1,19 +1,19 @@
-window.onscroll = function () {
+document.getElementById('container').onscroll = function () {
     myFunction();
     showScrollTop();
 };
 
-var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-
 function myFunction() {
+    const currentScrollElement = document.querySelector('#container')
+    const winScroll = currentScrollElement.scrollTop
+    const height = currentScrollElement.scrollHeight - currentScrollElement.clientHeight;
     var scrolled = (winScroll / height) * 100;
     document.getElementById("scroll-bar").style.width = scrolled + "%";
 }
 
 showScrollTop = () => {
     let elementID = 'about-me'
-    const currentScrollPosition = window.pageYOffset;
+    const currentScrollPosition = document.querySelector('#container').scrollTop;
     const selectElement = document.getElementById(elementID)
     const elementOffsetTop = selectElement.offsetTop
 

@@ -20,10 +20,27 @@ html {
 }
 
 body {
-  -ms-overflow-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-body::-webkit-scrollbar {
+.container {
+  -ms-overflow-style: none;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  position: relative;
+}
+
+.icons {
+  margin-right: 1.2rem;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
+.container::-webkit-scrollbar {
   display: none;
 }
 
@@ -91,7 +108,9 @@ body::-webkit-scrollbar {
 .home {
   height: 100vh;
   width: 100vw;
+  scroll-snap-align: start;
   background-color: #182153;
+  position: relative;
 }
 
 .home__image {
@@ -160,7 +179,7 @@ body::-webkit-scrollbar {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-20%, -50%);
+    transform: translate(0, -50%);
   }
 
   .home__image {
@@ -173,16 +192,17 @@ body::-webkit-scrollbar {
     position: absolute;
     top: 50%;
     padding: 1.5rem;
-    transform: translate(2%, -50%);
+    margin: 0;
+    transform: translate(-2%, -50%);
   }
 
   .home__image {
     width: 100vw;
   }
-
+  /* 
   .header {
     display: none;
-  }
+  } */
 
   .progress-container {
     display: none;
