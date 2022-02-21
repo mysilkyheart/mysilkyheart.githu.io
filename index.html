@@ -9,18 +9,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/component.css">
-    <link rel="stylesheet" href="./assets/css/layout.css">
-    <link rel="stylesheet" href="./assets/css/typography.css">
+    <link rel="stylesheet" href="./assets/css/progress-bar.css">
+    <link rel="stylesheet" href="./assets/css/timeline.css">
 
     <link rel="icon" href="./assets/image/icon.png">
-    <title>deanufriana.me</title>
-
-    <style>
-
-    </style>
+    <title>deanufriana</title>
 
 </head>
 
@@ -28,78 +22,60 @@
     <div class="progress-container">
         <div class="progress-bar" id="scroll-bar"></div>
     </div>
-    <header class="header" style="display:none;">
-        <div class="header__brand">Devi Adi Nufriana</div>
-    </header>
     <div class="container" id="container">
+        <section id="intro">
+            <h1 class="label">Hello,</h1>
+            <div class="title">I am <span>Devi Adi Nufriana</span></div>
+            <div class="subtitle">I am a Software Engineer with <span id="year"></span> year of experience
+            </div>
+            <div>
+                <a href="#description">
+                    <button>Find out more</button>
+                </a>
 
-        <section class="home">
-            <img src="./assets/image/bg.jpeg" class="home__image">
-            <div class="home__center">
-                <h1 class="home__label">Hello,</h1>
-                <div class="home__title">I am <span style="color:#28a745">Devi Adi Nufriana</span></div>
-                <div class="home__subtitle">i am a Software Engineer with <span id="year"></span> year of experience
-                </div>
-                <div class="group-button">
-                    <a href="#more">
-                        <button class="btn btn--success">Find out more</button>
-                    </a>
-                    <a href="https://drive.google.com/file/d/1RJzX_VWYWQGP4kCQivAbueowSuvQqkhV/view?usp=sharing"
-                        target="_blank">
-                        <button class="btn btn--secondary">Download CV</button>
-                    </a>
-                </div>
+                <button
+                    onclick="goTo('https://drive.google.com/file/d/1RJzX_VWYWQGP4kCQivAbueowSuvQqkhV/view?usp=sharing')">Download
+                    CV</button>
             </div>
         </section>
 
-        <section style="display: flex; min-height: 35rem; background-color: #f1f1f1;" id="more">
-            <div class="animate__animated" style="margin: auto; text-align: center; width:95%; display:none"
-                id="about-me">
-                <h1>About me</h1>
-                <br>
-                <p>a technology addict is never tired of stopping learning new things related to technology</p>
-                <div class="language-and-tools">
-                    <img src="assets/icons/Property 1=bitbucket.png" alt="">
-                    <img src="assets/icons/Property 1=ci.png" alt="">
-                    <img src="assets/icons/Property 1=css_3.png" alt="">
-                    <img src="assets/icons/Property 1=git.png" alt="">
-                    <img src="assets/icons/Property 1=html_5.png" alt="">
-                    <img src="assets/icons/Property 1=jquery.png" alt="">
-                    <img src="assets/icons/Property 1=js.png" alt="">
-                    <img src="assets/icons/Property 1=logos_bootstrap.png" alt="">
-                    <img src="assets/icons/Property 1=logos_dart.png" alt="">
-                    <img src="assets/icons/Property 1=logos_flutter.png" alt="">
-                    <img src="assets/icons/Property 1=logos_terminal.png" alt="">
-                    <img src="assets/icons/Property 1=node_js.png" alt="">
-                    <img src="assets/icons/Property 1=npm.png" alt="">
-                    <img src="assets/icons/Property 1=php.png" alt="">
-                    <img src="assets/icons/Property 1=python.png" alt="">
-                    <img src="assets/icons/Property 1=react.png" alt="">
-                    <img src="assets/icons/Property 1=redux.png" alt="">
-                    <img src="assets/icons/Property 1=sublime_text.png" alt="">
-                    <img src="assets/icons/Property 1=vs_code.png" alt="">
-                </div>
+        <section id="description">
+            <h2>About me</h2>
+            <p>a technology addict is never tired of stopping learning new things related to technology</p>
+            <div class="icons-group">
+                <img src="assets/icons/Property 1=bitbucket.png" alt="">
+                <img src="assets/icons/Property 1=ci.png" alt="">
+                <img src="assets/icons/Property 1=css_3.png" alt="">
+                <img src="assets/icons/Property 1=git.png" alt="">
+                <img src="assets/icons/Property 1=html_5.png" alt="">
+                <img src="assets/icons/Property 1=jquery.png" alt="">
+                <img src="assets/icons/Property 1=js.png" alt="">
+                <img src="assets/icons/Property 1=logos_bootstrap.png" alt="">
+                <img src="assets/icons/Property 1=logos_dart.png" alt="">
+                <img src="assets/icons/Property 1=logos_flutter.png" alt="">
+                <img src="assets/icons/Property 1=logos_terminal.png" alt="">
+                <img src="assets/icons/Property 1=node_js.png" alt="">
+                <img src="assets/icons/Property 1=npm.png" alt="">
+                <img src="assets/icons/Property 1=php.png" alt="">
+                <img src="assets/icons/Property 1=python.png" alt="">
+                <img src="assets/icons/Property 1=react.png" alt="">
+                <img src="assets/icons/Property 1=redux.png" alt="">
+                <img src="assets/icons/Property 1=sublime_text.png" alt="">
+                <img src="assets/icons/Property 1=vs_code.png" alt="">
             </div>
         </section>
 
-        <section style="background-color:white; padding-bottom:1.5rem;">
-            <div class="title-header"
-                style="display:flex; min-height: 100px; width:99%; border: 1px solid rgba(0, 0, 0, 0.425); margin-bottom:4rem">
-                <h1 style="margin: auto;">Experience</h1>
-            </div>
-
+        <section id="experience">
+            <h2>Experience</h2>
             <div class="timeline">
                 <div class="timeline__left">
-                    <div>
-                        <h5 style="margin-bottom:0.2rem;">2019 - 2021</h5>
-                        <h5>Software Engineer</h5>
-                    </div>
+                    <h4>2019 - 2021</h4>
+                    <h4>Software Engineer</h4>
                 </div>
                 <div class="timeline__right">
-                    <h4 style="margin-bottom:0.2rem;">BRI LIFE</h4>
-                    <h5 style="margin-bottom:0.2rem; cursor: pointer;"
-                        onclick="goTo('https://goo.gl/maps/d3eJwq2VvoSGxzgj7')">Graha Irama,
-                        Indonesia</h5>
+                    <h4>BRI LIFE <span class="badge">2019 - 2021 Software Engineer</span></h4>
+                    <h6 onclick="goTo('https://goo.gl/maps/d3eJwq2VvoSGxzgj7')">Graha Irama,
+                        Indonesia</h6>
                     <p>
                         BRI Life is a national life insurance company that is a subsidiary of the largest bank in
                         Indonesia, Bank Rakyat Indonesia (BRI). As a company that has been operating in the life
@@ -113,18 +89,14 @@
 
             <div class="timeline">
                 <div class="timeline__left">
-                    <div>
-                        <h5 style="margin-bottom:0.2rem;">2021 - present</h5>
-                        <h5>Software Engineer</h5>
-                    </div>
+                    <h4>2021 - Present</h4>
+                    <h4>Software Engineer</h4>
                 </div>
                 <div class="timeline__right">
-                    <h4 style="margin-bottom:0.2rem;">Frisidea</h4>
-                    <h5 style="margin-bottom:0.2rem; cursor: pointer;"
-                        onclick="goTo('https://goo.gl/maps/sSA1BGVta2NXeimY7')">Aston Pluit
-                        Hotel & Residence, Indonesia</h5>
-                    <p>
-                        Frisidea is a technology company for software development, providing a wide range of
+                    <h4>Frisidea  <span class="badge">2019 - Present Software Engineer</span></h4>
+                    <h6 onclick="goTo('https://goo.gl/maps/sSA1BGVta2NXeimY7')">Aston Pluit
+                        Hotel & Residence, Indonesia</h6>
+                    <p> Frisidea is a technology company for software development, providing a wide range of
                         website,mobile,
                         and desktop controls combined with a service-oriented approach to apps.
                     </p>
@@ -132,16 +104,12 @@
             </div>
         </section>
 
-        <section>
-            <div class="title-header"
-                style="display:flex; min-height: 100px; width:99%; border: 1px solid rgba(0, 0, 0, 0.425); margin-bottom:4rem">
-                <h1 style="margin: auto;">Project</h1>
-            </div>
-
-            <div style="display:inline-flex; flex-wrap: wrap; width: 100%; justify-content:center">
-                <div class="card" style="background-image: url('/assets/image/sistemskripsi/1.png');">
+        <section id="project">
+            <h2>Project</h2>
+            <div class="card-group">
+                <div class="card">
                     <div class="card-body">
-                        <div style="flex:1">
+                        <div>
                             <h4>Sistem Skripsi Online</h4>
                             <p>The thesis process becomes more organized and faster which is carried out online which
                                 can be
@@ -153,7 +121,7 @@
                         </div>
                         <div>
                             <h5>Language And Tools:</h5>
-                            <div class="language-and-tools">
+                            <div class="icons-group">
                                 <img src="/assets/icons/Property 1=ci.png" alt="">
                                 <img src="/assets/icons/Property 1=logos_bootstrap.png" alt="">
                                 <img src="/assets/icons/Property 1=jquery.png" alt="">
@@ -161,16 +129,14 @@
                                 <img src="/assets/icons/Property 1=vs_code.png" alt="">
                             </div>
                             <div>
-                                <button class="btn btn--secondary"
-                                    onclick="goTo('https://github.com/deanufriana/sistem_skripsi')">Link</button>
-                                <button class="btn btn--primary">Preview</button>
+                                <button onclick="goTo('https://github.com/deanufriana/sistem_skripsi')">Link</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card" style="background-image: url('/assets/image/mylife/1.png');">
+                <div class="card">
                     <div class="card-body">
-                        <div style="flex:1">
+                        <div>
                             <h4>My Life</h4>
                             <p>BRI Life – My Life is used only for employee and sales personal of BRI Life
                                 My life cover for Micro Insurance Product BRI Life.
@@ -181,32 +147,29 @@
                                     registration,
                                     Redeem
                                     Point for reward form product sales, and sales report.</span>
-                                <span id="read-mylife" onclick="readMore('mylife')"
-                                    style="color: #281b9e !important; cursor: pointer;">read more
+                                <span id="read-mylife" class="read-more" onclick="readMore('mylife')">read more
                                 </span>
                             </p>
                             <br>
                         </div>
-
                         <div>
                             <h5>Language And Tools:</h5>
-                            <div class="language-and-tools">
+                            <div class="icons-group">
                                 <img src="/assets/icons/Property 1=logos_flutter.png" alt="">
                                 <img src="/assets/icons/Property 1=logos_dart.png" alt="">
                                 <img src="/assets/icons/Property 1=vs_code.png" alt="">
                                 <img src="/assets/icons/Property 1=logos_terminal.png" alt="">
                             </div>
                             <div>
-                                <button class="btn btn--secondary"
+                                <button
                                     onclick="goTo('https://play.google.com/store/apps/details?id=com.brilife.newmylife&hl=in&gl=US')">Link</button>
-                                <button class="btn btn--primary" onclick="previewProduct()">Preview</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card" style="background-image: url('/assets/image/ccc/1.jpg');">
+                <div class="card">
                     <div class="card-body">
-                        <div style="flex:1">
+                        <div>
                             <h4>Customer Care Center</h4>
                             <p>Customer Care Insurance System is a system for insurance app to handle their
                                 customer about
@@ -217,7 +180,7 @@
 
                         <div>
                             <h5>Language And Tools:</h5>
-                            <div class="language-and-tools" style="padding:1.2rem 0">
+                            <div class="icons-group">
                                 <img src="/assets/icons/Property 1=node_js.png" alt="">
                                 <img src="/assets/icons/Property 1=npm.png" alt="">
                                 <img src="/assets/icons/Property 1=js.png" alt="">
@@ -226,9 +189,7 @@
                                 <img src="/assets/icons/Property 1=logos_terminal.png" alt="">
                             </div>
                             <div>
-                                <button class="btn btn--secondary"
-                                    onclick="goTo('https://ccc.brilife.co.id/')">Link</button>
-                                <button class="btn btn--primary">Preview</button>
+                                <button onclick="goTo('https://ccc.brilife.co.id/')">Link</button>
                             </div>
                         </div>
                     </div>
@@ -236,97 +197,27 @@
             </div>
         </section>
 
-        <section style="padding: 1rem 0; scroll-snap-align: center;">
-            <div class="animate__animated"
-                style="width:100%; display: inline-flex; justify-content:center; display:none; transition: 3ms ease;"
-                id="detail-card">
-                <div class="detail-card"
-                    style="border: 1px solid #181818; min-height: 350px; border-radius:0.5rem; max-width: 110rem; width: 96%;">
-                    <div class="detail-card-body" style="padding:1rem;">
-                        <h4>My Life</h4>
-                        <p>BRI Life – My Life is used only for employee and sales personal of BRI Life My life cover for
-                            Micro Insurance Product BRI Life. My life is a system which designed to facilitate the
-                            process
-                            registration sales personel and employee of BRI Life, new member of insurance administration
-                            with simple registration, Redeem Point for reward form product sales, and sales report.</p>
-                        <div
-                            style="white-space:nowrap; overflow-x: auto; width: 95%; scroll-snap-type: x mandatory; overflow-x: auto;">
-                            <img class="image" src="/assets/image/mylife/1.png" alt="">
-                            <img class="image" src="/assets/image/mylife/2.png" alt="">
-                            <img class="image" src="/assets/image/mylife/3.png" alt="">
-                            <img class="image" src="/assets/image/mylife/4.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section style="min-height:50rem; background-color: #182153; scroll-snap-align: start;">
-            <div class="title-header"
-                style="display:flex; color: #f1f1f1; min-height: 100px; width:100%; border: 1px solid rgba(255, 255, 255, 0.425); margin-bottom:2rem">
-                <h1 style="margin: auto;">Contact</h1>
-            </div>
-            <div style="display: flex; flex-wrap:wrap">
-                <div style="flex:1; display: flex; justify-content:flex-end; padding: 0 2rem; margin-bottom:3rem">
-                    <form id="sendMessage">
-                        <input id="email" name="email" class="form-control" type="text" type="email"
-                            placeholder="Your Email" required>
-                        <textarea id="text" class="form-control" name="text" cols="30" rows="10"
-                            placeholder="Your Message" required></textarea>
-                        <div>
-                            <button class="btn btn--secondary" type="submit">Send Message</button>
-                        </div>
-                    </form>
-                </div>
-                <div style="flex: 1; color: #f1f1f1; padding: 0 2rem;">
-                    <div class="icon-contacts">
-                        <img class="icons" src="/assets/icons/mail.png" alt="">
-                        <h4>devi.nufriana@gmail.com</h4>
-                    </div>
-                    <div class="icon-contacts">
-                        <img class="icons" src="/assets/icons/linkedin.png" alt="">
-                        <h4>devi.nufriana</h4>
-                    </div>
-                    <div class="icon-contacts">
-                        <img class="icons" src="/assets/icons/github.png" alt="">
-                        <h4>@deanufriana</h4>
-                    </div>
-                    <div class="icon-contacts">
-                        <img class="icons" src="/assets/icons/instagram.png" alt="">
-                        <h4>deanufriana</h4>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer class="footer" style="scroll-snap-align: start;">
-            <div class="footer__contactus">
-                <h3>Contact me</h3>
-                <br>
-                <ul>
-                    <li>
-                        <a target="_blank" href="mailto: devi.nufriana@gmail.com">
-                            <img src="assets/image/icon/email.png">
-                        </a>
-                    </li>
-                    <li><a target="_blank" href="https://www.linkedin.com/in/devinufriana/">
-                            <img src="assets/image/icon/linkedin.png">
-                        </a></li>
-                    <li><a target="_blank" href="https://github.com/mysilkyheart"><img
-                                src="assets/image/icon/github.png"></a></li>
-                    <li> <a target="_blank" href="https://www.instagram.com/deanufriana/">
-                            <img src="assets/image/icon/instagram.png">
-                        </a></li>
-                </ul>
-            </div>
-            <br>
-            <div style="font-size: larger; font-weight: 900;">@<span id="year"></span> By Devi Adi Nufriana.
+        <footer class="footer">
+            <h3>Contact me</h3>
+            <div class="icons-group">
+                <a target="_blank" href="mailto: devi.nufriana@gmail.com">
+                    <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/gmail.svg">
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/devinufriana">
+                    <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg">
+                </a>
+                <a target="_blank" href="https://github.com/deanufriana">
+                    <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/deanufriana">
+                    <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg">
+                </a>
+                <a target="_blank" href="https://www.upwork.com/freelancers/~0184d7dce8f8055ca5">
+                    <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/upwork.svg">
+                </a>
             </div>
         </footer>
-
     </div>
-
-
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5XH9HL1N8D"></script>
     <script src="./lib/noframework.waypoints.min.js"></script>
