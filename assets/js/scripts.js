@@ -1,9 +1,10 @@
+const dialog = document.querySelector('dialog');
+
 document.getElementById('container').onscroll = function () {
-    myFunction();
-    showScrollTop();
+    progressScroll();
 };
 
-function myFunction() {
+function progressScroll() {
     const currentScrollElement = document.querySelector('#container')
     const winScroll = currentScrollElement.scrollTop
     const height = currentScrollElement.scrollHeight - currentScrollElement.clientHeight;
@@ -43,7 +44,7 @@ const app = document.getElementById('sub-header');
 
 const date = new Date()
 const getYear = new Date().getFullYear()
-const firstJob = new Date('12-12-2018').getFullYear()
+const firstJob = new Date('01-04-2019').getFullYear()
 
 document.getElementById('year').innerHTML = getYear - firstJob
 
@@ -73,21 +74,6 @@ function previewProduct() {
     id.classList.add('animate__fadeInUp')
 }
 
-const idForm = document.getElementById('sendMessage')
-idForm.addEventListener('submit', e => {
-    e.preventDefault()
-    const email = document.getElementById('email').value
-    const text = document.getElementById('text').value
-
-    fetch('http://api.deanufriana.xyz/sendEmail', {
-        method: "POST",
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email, text })
-    })
-        .then((res) => res.json())
-        .then(data => alert('Your message has been sent'))
-        .catch(err => alert(JSON.stringify(err)))
-
-})
+function openModal() {
+    dialog.showModal()
+}

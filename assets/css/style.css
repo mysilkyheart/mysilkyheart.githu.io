@@ -38,8 +38,10 @@ body {
   flex-direction: column;
   text-align: center;
   height: 100vh;
+  min-height: 300px;
   margin-inline: var(--size-5);
   position: relative;
+  background-color: var(--gradient-30);
 }
 
 #intro button {
@@ -48,7 +50,8 @@ body {
 }
 
 #intro button:hover {
-  background-color: var(--gray-7);
+  background-color: var(--gray-8);
+  color: var(--gray-0);
 }
 
 #intro:first-of-type a:first-child button {
@@ -89,7 +92,7 @@ body {
   flex-direction: column;
   text-align: center;
   background-color: var(--surface-2);
-  padding-block: var(--size-8);
+  padding: var(--size-4);
 }
 
 #description > .icons-group {
@@ -104,7 +107,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-block: var(--size-8);
+  padding: var(--size-4);
 }
 
 #experience h2 {
@@ -126,27 +129,40 @@ body {
 #project .card-group {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
 }
 
 #project .card {
   margin-inline: var(--size-2);
   margin-bottom: var(--size-4);
-  max-width: 35rem;
+  max-width: var(--size-content-2);
   border: var(--border-size-2) solid var(--brand);
   border-radius: var(--radius-conditional-2);
   background-size: cover;
+  background-color: var(--surface-1);
+  box-shadow: var(--shadow-3);
   background-position: center;
 }
 
+#project .card:nth-child(odd) {
+  background-color: var(--surface-2);
+}
+
 #project .card-body {
-  padding: 1rem;
+  padding: var(--size-fluid-2);
   display: flex;
-  height: calc(100% - 2rem);
   flex-direction: column;
   justify-content: space-between;
-  min-height: 27rem;
+  height: 100%;
+}
+
+#project .card-body > h4 {
+  margin-bottom: var(--size-2);
+}
+
+#project .card-body > p {
+  margin-bottom: auto;
 }
 
 #contact {
@@ -159,7 +175,7 @@ body {
 }
 
 button {
-  border-radius: var(--radius-conditional-1);
+  border-radius: var(--radius-conditional-2);
   font-weight: var(--font-weight-6);
   background-color: var(--brand);
   padding-inline: var(--size-4);
@@ -176,8 +192,8 @@ h5 {
   font-size: var(--font-size-fluid-1);
 }
 
-p {
-  font-size: var(--font-size-fluid-1);
+span {
+  color: var(--indigo-8);
 }
 
 .icons-group {
