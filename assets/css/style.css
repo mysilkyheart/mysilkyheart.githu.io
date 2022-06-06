@@ -26,7 +26,7 @@ body {
 
 .container {
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  overflow: auto;
   height: 100vh;
   position: relative;
 }
@@ -91,6 +91,7 @@ body {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  scroll-margin: 12.8px;
   background-color: var(--surface-2);
   padding: var(--size-4);
 }
