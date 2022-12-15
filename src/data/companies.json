@@ -1,0 +1,48 @@
+[
+    {
+        "name": "Blibli",
+        "role": "Frontend Software Engineer",
+        "date": {
+            "start": "Aug 2022",
+            "end": "Present"
+        },
+        "jobDesc": [
+            "Analyze software and how can it improve performance",
+            "Responsibility for UI Detail page and how to improvement it"
+        ]
+    },
+    {
+        "name": "Frisidea",
+        "role": "Frontend Software Engineer",
+        "date": {
+            "start": "Apr 2021",
+            "end": "Jul 2022"
+        },
+        "jobDesc": [
+            "develop, maintain, and improve web applications. fully responsible for 3 application web projects.",
+            "contribute and improve code at agent application TMLI web application and upgrade to latest technology react.",
+            "Implement UI/UX project kitasiap.com design and change based on user requirements and client expectations using HTML or css and user interaction using javascript.",
+            "Implement web access customer care access polis.",
+            "Tech used: javascript, reactjs, vitejs, git, nginx, and linux.",
+            "Setup and configuration deploying the app in development or production"
+        ]
+    },
+    {
+        "name": "BRI Life",
+        "role": "Fullstack Developer",
+        "date": {
+            "start": "Feb 2019",
+            "end": "Mar 2021"
+        },
+        "jobDesc": [
+            "Implement user requirements based on client expectations and the best practice techniques.",
+            "develop, maintain and improve mobile applications and web applications.",
+            "fully responsible for 3 application projects with different technology",
+            "rewrite, test, and improve mobile application mylife using flutter from react native.",
+            "develop app customer care project",
+            "contribute to maintaining web application digiform using reactjs",
+            "Tech experience: javascript, expressjs, reactjs, git, react native, SQL server, and Linux  configuration server.",
+            "Setup and configuration deploying the app in development or production"
+        ]
+    }
+]
