@@ -29,7 +29,7 @@ const techIcons = [
   <Center :isFullHeight="false">
     <div class="content" id="about">
       <Header>About</Header>
-      <p class="font-medium mb-4 text-md sm:text-xl mt-3">
+      <p class="font-normal mb-4 text-md sm:text-xl mt-3">
         a technology addict is never tired of stopping learning new things
         related to technology
       </p>

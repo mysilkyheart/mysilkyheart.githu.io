@@ -8,7 +8,7 @@ import Header from "../components/Header.vue";
   <Center>
     <div class="content">
       <h4
-        class="text-xl sm:text-lg bg-slate-700 text-white py-2 px-5 rounded-md font-bold w-fit m-auto dark:bg-white dark:text-slate-800"
+        class="text-xl sm:text-lg bg-slate-700 text-white py-2 px-5 rounded-md font-bold w-fit m-auto dark:bg-white dark:text-slate-800 mb-3"
       >
         Hello,
       </h4>
@@ -16,7 +16,7 @@ import Header from "../components/Header.vue";
         I am
         <span class="text-blue-800 dark:text-blue-600">Devi Adi Nufriana</span>
       </Header>
-      <p class="font-bold mb-3 text-md sm:text-xl">
+      <p class="font-normal mb-3 text-md sm:text-xl">
         a
         <span class="text-blue-800 dark:text-blue-600">Software Engineer</span>
         with 3 year of experience

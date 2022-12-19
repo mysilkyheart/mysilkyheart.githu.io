@@ -6,7 +6,7 @@ withDefaults(defineProps<{ isFullHeight: boolean }>(), { isFullHeight: true });
   <div
     :class="[
       { 'h-screen': isFullHeight },
-      'text-gray-800 flex justify-center items-center even:bg-gray-200 dark:even:bg-gray-600 dark:bg-gray-700 dark:text-white',
+      'text-gray-800 flex justify-center items-center even:bg-gray-200 dark:even:bg-slate-700 dark:bg-slate-800 dark:text-white',
     ]"
   >
     <slot />
