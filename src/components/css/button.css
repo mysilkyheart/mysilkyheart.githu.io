@@ -1,0 +1,11 @@
+button {
+  padding: var(--size-2) var(--size-4);
+  color: var(--gray-1);
+  &.primary {
+    background-color: var(--brand);
+  }
+  border-radius: var(--radius-1);
+  &:hover {
+    opacity: 0.8;
+  }
+}

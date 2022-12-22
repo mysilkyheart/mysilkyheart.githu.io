@@ -1,0 +1,27 @@
+@import "open-props/postcss/style";
+@import "open-props/normalize";
+
+:root {
+  --brand: var(--blue-8);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.mark {
+  color: var(--brand);
+  display: inline-block;
+}
+
+.groups {
+  margin-top: var(--size-3);
+  display: flex;
+  gap: var(--size-3);
+  flex-wrap: wrap;
+
+}

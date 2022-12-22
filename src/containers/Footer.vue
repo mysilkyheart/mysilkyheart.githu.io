@@ -13,10 +13,14 @@ const contactIcons = [
 ];
 </script>
 <template>
-  <div class="py-8 px-4 bg-gray-300 dark:even:bg-slate-600 dark:bg-slate-800 dark:text-white">
-    <h4 class="text-4xl font-extrabold">Contact me</h4>
-    <div class="flex gap-5 mt-3">
-      <a v-for="contactIcon in contactIcons" :href="contactIcon.url" target="_blank">
+  <footer class="footer">
+    <h3>Contact me</h3>
+    <div class="groups">
+      <a
+        v-for="contactIcon in contactIcons"
+        :href="contactIcon.url"
+        target="_blank"
+      >
         <img
           width="32"
           height="32"
@@ -25,5 +29,12 @@ const contactIcons = [
         />
       </a>
     </div>
-  </div>
+  </footer>
 </template>
+
+<style>
+.footer {
+  padding: var(--size-4);
+  background-color: var(--surface-2);
+}
+</style>

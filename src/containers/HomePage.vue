@@ -1,27 +1,21 @@
 <script lang="ts" setup>
 import Button from "../components/Button.vue";
 import Center from "../components/Center.vue";
-import Header from "../components/Header.vue";
 </script>
 
 <template>
   <Center>
     <div class="content">
-      <h4
-        class="text-xl sm:text-lg bg-slate-700 text-white py-2 px-5 rounded-md font-bold w-fit m-auto dark:bg-white dark:text-slate-800 mb-3"
-      >
-        Hello,
-      </h4>
-      <Header>
-        I am
-        <span class="text-blue-800 dark:text-blue-600">Devi Adi Nufriana</span>
-      </Header>
+      <h4>Hello,</h4>
+      <h1>
+        I am <span class="mark"> Devi Adi Nufriana</span>
+      </h1>
       <p class="font-normal mb-3 text-md sm:text-xl">
         a
-        <span class="text-blue-800 dark:text-blue-600">Software Engineer</span>
+        <span class="mark">Software Engineer</span>
         with 3 year of experience
       </p>
-      <div class="flex gap-3 flex-wrap sm:flex-nowrap w-full justify-center">
+      <div class="groups">
         <a href="#about">
           <Button variant="primary">Found out more</Button>
         </a>

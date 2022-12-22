@@ -1,0 +1,26 @@
+---
+import "../styles/global.css";
+import HomePage from "../containers/HomePage.vue";
+import About from "../containers/About.vue";
+import Experience from "../containers/Experience.vue";
+import Footer from "../containers/Footer.vue";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.svg">
+    <title>Personal Portofolio</title>
+  </head>
+  <body>
+    <body>
+      <HomePage />
+      <About />
+      <Experience client:visible />
+      <Footer client:visible />
+    </body>
+  </body>
+</html>

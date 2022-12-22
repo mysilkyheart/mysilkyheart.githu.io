@@ -2,14 +2,14 @@
 import companies from "../data/companies.json";
 
 import Center from "../components/Center.vue";
-import Header from "../components/Header.vue";
 import Timeline from "../components/Timeline.vue";
 </script>
 
 <template>
   <Center :is-full-height="false">
-    <div class="content">
-      <Header>Experience</Header>
+    <div>
+      <h1>Experience</h1>
+      <br />
       <Timeline
         v-for="company in companies"
         :name="company.name"
