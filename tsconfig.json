@@ -1,5 +1,7 @@
 {
   "extends": "astro/tsconfigs/strict",
+  "resolveJsonModule": true,
+  "esModuleInterop": true,
   "compilerOptions": {
     "jsx": "preserve"
   }

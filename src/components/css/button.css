@@ -4,6 +4,9 @@ button {
   &.primary {
     background-color: var(--brand);
   }
+  &.secondary {
+    background-color: var(--gray-7);
+  }
   border-radius: var(--radius-1);
   &:hover {
     opacity: 0.8;

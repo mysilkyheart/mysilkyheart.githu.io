@@ -1,5 +1,6 @@
 .timeline {
   position: relative;
+  margin-bottom: var(--size-2);
   & .role {
     font-size: 0.8rem;
     position: absolute;

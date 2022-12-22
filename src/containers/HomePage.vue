@@ -7,12 +7,9 @@ import Center from "../components/Center.vue";
   <Center>
     <div class="content">
       <h4>Hello,</h4>
-      <h1>
-        I am <span class="mark"> Devi Adi Nufriana</span>
-      </h1>
-      <p class="font-normal mb-3 text-md sm:text-xl">
-        a
-        <span class="mark">Software Engineer</span>
+      <h1>I am <span class="mark"> Devi Adi Nufriana</span></h1>
+      <p>
+        a <span class="mark">Software Engineer</span>
         with 3 year of experience
       </p>
       <div class="groups">
