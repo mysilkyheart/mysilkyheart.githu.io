@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 import "./css/experience.css";
 
-import companies from "../data/companies.json";
-import Center from "../components/Center.vue";
-import Card from "../components/Card.vue";
+import companies from "@/data/companies.json";
+import Center from "@/components/Center.vue";
+import Card from "@/components/Card.vue";
 </script>
 
 <template>
@@ -23,13 +23,6 @@ import Card from "../components/Card.vue";
           </ul>
         </Card>
       </div>
-      <!-- <Timeline
-        v-for="company in companies"
-        :name="company.name"
-        :date="company.date"
-        :role="company.role"
-        :job-desc="company.jobDesc"
-      ></Timeline> -->
     </div>
   </Center>
 </template>

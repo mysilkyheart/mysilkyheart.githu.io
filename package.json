@@ -1,7 +1,7 @@
 {
   "name": "deanufriana.github.io",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "astro dev",
@@ -11,13 +11,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^0.13.0",
-    "@astrojs/rss": "^1.2.1",
-    "@astrojs/sitemap": "^1.0.0",
-    "@astrojs/vue": "^1.2.2",
-    "astro": "^1.7.2",
+    "@astrojs/mdx": "^1.0.2",
+    "@astrojs/rss": "^3.0.0",
+    "@astrojs/sitemap": "^3.0.0",
+    "@astrojs/vue": "^3.0.0",
+    "astro": "^3.0.10",
     "open-props": "^1.5.3",
-    "vue": "^3.2.45"
+    "vue": "^3.3.4"
   },
   "devDependencies": {
     "@astrojs/partytown": "^2.0.0",

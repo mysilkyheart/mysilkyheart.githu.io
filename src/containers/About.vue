@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Center from "../components/Center.vue";
-import { simpleIcon } from "../constants/url";
+import Center from "@/components/Center.vue";
+import { simpleIcon } from "@/constants/url";
 
 const techIcons = [
   "html5",

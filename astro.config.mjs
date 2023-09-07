@@ -8,8 +8,7 @@ import vue from "@astrojs/vue";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://deanufriana.github.io',
-  base: '/',
+  site: 'https://deanufriana.github.io/',
   integrations: [mdx(), sitemap(), vue(),
   partytown({
     // Adds dataLayer.push as a forwarding-event.

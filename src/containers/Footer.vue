@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { simpleIcon } from "../constants/url";
+import { simpleIcon } from "@/constants/url";
 
 const contactIcons = [
   { icon: "gmail", url: "mailto:devi.nufriana@gmail.com" },
