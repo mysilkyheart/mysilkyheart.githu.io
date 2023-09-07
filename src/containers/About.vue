@@ -25,7 +25,7 @@ const techIcons = [
 ];
 </script>
 <template>
-  <Center :isFullHeight="false">
+  <Center>
     <div class="content" id="about">
       <h1>About</h1>
       <p>

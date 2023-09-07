@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import "./css/center.css";
+import "./css/card.css";
 withDefaults(defineProps<{ isFullHeight?: boolean }>(), { isFullHeight: true });
 </script>
 
 <template>
-  <div :class="[{ 'h-screen': isFullHeight }, 'center']">
+  <div :class="[{}, 'card']">
     <slot />
   </div>
 </template>
