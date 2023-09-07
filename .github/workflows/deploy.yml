@@ -29,6 +29,8 @@ jobs:
           
           # Push the updated package.json and tags
           git push --follow-tags
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
   deploy:
     needs: build
     runs-on: ubuntu-latest
