@@ -1,0 +1,18 @@
+.timeline {
+  position: relative;
+  margin-bottom: var(--size-4);
+  & ul {
+    padding-top: var(--size-2);
+  }
+  & .role {
+    font-size: 0.8rem;
+    position: absolute;
+    top: 0.3rem;
+    padding: var(--size-1) var(--size-2);
+    background-color: var(--brand);
+    border-radius: var(--radius-2);
+    margin-left: var(--size-2);
+    color: var(--gray-3);
+    font-weight: var(--font-weight-5);
+  }
+}

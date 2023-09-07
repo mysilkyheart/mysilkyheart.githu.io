@@ -1,0 +1,41 @@
+@import "open-props/postcss/style";
+@import "open-props/normalize";
+
+:root {
+  --brand: var(--blue-8);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.mark {
+  color: var(--brand);
+  display: inline-block;
+}
+
+.groups {
+  margin-top: var(--size-3);
+  display: flex;
+  gap: var(--size-3);
+  flex-wrap: wrap;
+}
+
+.role {
+  font-size: 0.8rem;
+  padding: var(--size-1) var(--size-2);
+  background-color: var(--brand);
+  border-radius: var(--radius-2);
+  margin-left: var(--size-2);
+  color: var(--gray-3);
+  font-weight: var(--font-weight-5);
+  float: right;
+}
+
+hr {
+  margin-block: var(--size-fluid-1);
+}

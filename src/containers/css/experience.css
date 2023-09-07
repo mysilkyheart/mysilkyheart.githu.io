@@ -1,0 +1,12 @@
+#experience {
+  .list {
+    display: flex;
+    gap: var(--size-fluid-2);
+    @media screen and (max-width: 1200px) {
+        flex-wrap: wrap;
+    }
+  }
+  & > h1 {
+    margin-bottom: var(--size-5);
+  }
+}

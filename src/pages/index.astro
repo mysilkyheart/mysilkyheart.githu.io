@@ -1,0 +1,36 @@
+---
+import "../styles/global.css";
+import HomePage from "../containers/HomePage.vue";
+import About from "../containers/About.vue";
+import Experience from "../containers/Experience.vue";
+import Footer from "../containers/Footer.vue";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.svg" />
+    <title>Personal Portofolio</title>
+    <script
+      type="text/partytown"
+      src="https://www.googletagmanager.com/gtag/js?id=G-5XH9HL1N8D"
+    ></script>
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-5XH9HL1N8D");
+    </script>
+  </head>
+  <body>
+    <HomePage />
+    <About />
+    <Experience />
+    <Footer />
+  </body>
+</html>
