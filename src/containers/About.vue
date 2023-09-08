@@ -25,12 +25,11 @@ const techIcons = [
 ];
 </script>
 <template>
-  <Center>
-    <div class="content" id="about">
+  <Center id="about">
+    <div class="content">
       <h1>About</h1>
       <p>
-        a technology addict is never tired of stopping learning new things
-        related to technology
+        A technology enthusiast is endlessly driven by the pursuit of continuous learning and exploration in the ever-evolving world of technology
       </p>
       <div class="groups">
         <img

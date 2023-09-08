@@ -7,42 +7,82 @@
             "end": "Present"
         },
         "jobDesc": [
-            "Analyze software and how can it improve performance",
-            "Responsibility for UI Detail page and how to improvement it"
+            {
+                "role": "Frontend Software Engineer",
+                "experience": [
+                    "Reliably delivered high-quality code enhancements, consistently ensuring peak performance.",
+                    "Proficiently developed integration tests using Playwright to validate software functionality and reliability.",
+                    "Took charge of refining the UI Detail page, implementing improvements for an enhanced user experience.",
+                    "Conducted comprehensive software analysis to identify opportunities for performance enhancement and implemented strategies to optimize system efficiency."
+                ]
+            }
         ]
     },
     {
         "name": "Frisidea",
-        "role": "Frontend Software Engineer",
+        "role": "Web Application Development",
         "date": {
             "start": "Apr 2021",
             "end": "Jul 2022"
         },
+        "desc": "I have successfully developed, maintained, and enhanced three significant web applications, demonstrating my expertise in JavaScript, ReactJS, and other technologies. Here's a brief overview of my key achievements:",
         "jobDesc": [
-            "develop, maintain, and improve web applications. fully responsible for 3 application web projects.",
-            "contribute and improve code at agent application TMLI web application and upgrade to latest technology react.",
-            "Implement UI/UX project kitasiap.com design and change based on user requirements and client expectations using HTML or css and user interaction using javascript.",
-            "Implement web access customer care access polis.",
-            "Tech used: javascript, reactjs, vitejs, git, nginx, and linux.",
-            "Setup and configuration deploying the app in development or production"
+            {
+                "role": "Agent Application - TMLI Web Application",
+                "experience": [
+                    "Upgraded the application to utilize the latest React technology stack.",
+                    "Took on a pivotal role in enhancing the TMLI web application.",
+                    "Consistently contributed high-quality code and improvements, ensuring optimal performance."
+                ]
+            },
+            {
+                "role": "UI/UX Implementation - Kitasiap.com",
+                "experience": [
+                    "Translated design concepts into a functional and user-friendly web interface.",
+                    "Adapted the UI/UX of kitasiap.com to align with user preferences and client expectations.",
+                    "Leveraged HTML, CSS, and JavaScript to create engaging user interactions."
+                ]
+            }, 
+            {
+                "role": "Customer Care Access - Polis Web Access",
+                "experience": [
+                    "Successfully implemented a web-based customer care access system for the insurance industry.",
+                    "Ensured seamless user access to policy information and services.",
+                    "Employed technologies such as JavaScript, ReactJS, ViteJS, Git, Nginx, and Linux to achieve project goals."
+                ]
+            }
         ]
     },
     {
         "name": "BRI Life",
-        "role": "Fullstack Developer",
+        "role": "Software Development",
         "date": {
             "start": "Feb 2019",
             "end": "Mar 2021"
         },
         "jobDesc": [
-            "Implement user requirements based on client expectations and the best practice techniques.",
-            "develop, maintain and improve mobile applications and web applications.",
-            "fully responsible for 3 application projects with different technology",
-            "rewrite, test, and improve mobile application mylife using flutter from react native.",
-            "develop app customer care project",
-            "contribute to maintaining web application digiform using reactjs",
-            "Tech experience: javascript, expressjs, reactjs, git, react native, SQL server, and Linux  configuration server.",
-            "Setup and configuration deploying the app in development or production"
+            {
+                "role": "Mobile Application Expertise",
+                "experience": [
+                    "Spearheaded the transformation of the 'Mylife' mobile application, transitioning it from React Native to Flutter.",
+                    "Conducted thorough testing and optimization to enhance user experience and app performance."
+                ]
+            },
+            {
+                "role": "Web and Mobile Application Development",
+                "experience": [
+                    "Successfully managed three distinct application projects, showcasing adaptability across diverse technologies.",
+                    "Developed a customer care application, ensuring seamless access to vital services.",
+                    "Contributed significantly to the maintenance and enhancement of the web application 'Digiform' using ReactJS."
+                ]
+            },
+            {
+                "role": "Technology Stack",
+                "experience": [
+                    "Proficiently utilized a versatile tech stack, including JavaScript, ExpressJS, ReactJS, Git, React Native, SQL Server, and Linux server configuration.",
+                    "Equipped with the skills to configure and deploy applications in various environments, be it development or production."
+                ]
+            }
         ]
     }
 ]

@@ -17,10 +17,16 @@ import Card from "@/components/Card.vue";
             <span class="role">{{ company.role }}</span>
           </h3>
           <time>{{ company.date.start }} - {{ company.date.end }}</time>
-          <hr>
-          <ul>
-            <li v-for="job in company.jobDesc">{{ job }}</li>
-          </ul>
+          <hr />
+          <ol>
+            <li v-for="job in company.jobDesc">
+             <b>{{ job.role }}</b>
+              <ul>
+                <li v-for="exp in job.experience">{{ exp }}</li>
+              </ul>
+              <br>
+            </li>
+          </ol>
         </Card>
       </div>
     </div>
