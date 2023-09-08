@@ -5,10 +5,12 @@
     gap: var(--size-fluid-2);
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    
+
     & > * {
       scroll-snap-align: start;
       flex-shrink: 0;
+      width: 100%;
+      max-width: max-content;
       @media screen and (min-width: 800px) {
         width: 32%;
         min-width: 450px;
@@ -17,7 +19,8 @@
 
     ol,
     ul {
-      padding-left: var(--size-4);
+      padding-left: var(--size-3);
+      margin-top: 10px;
     }
   }
   & > h1 {
