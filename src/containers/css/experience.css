@@ -9,7 +9,7 @@
     & > * {
       scroll-snap-align: start;
       flex-shrink: 0;
-      width: 100%;
+      width: 90%;
       max-width: max-content;
       @media screen and (min-width: 800px) {
         width: 32%;
@@ -21,6 +21,9 @@
     ul {
       padding-left: var(--size-3);
       margin-top: 10px;
+      li {
+        padding-left: 0px;
+      }
     }
   }
   & > h1 {
