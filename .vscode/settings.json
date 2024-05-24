@@ -6,5 +6,8 @@
     },
     "editor.quickSuggestions": {
       "strings": true
-    }
+    },
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always",
+    },
   }
